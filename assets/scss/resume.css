@@ -1,0 +1,10 @@
+@media only all and (min-width: 0) {
+  main {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+  }
+  main a {
+    border: 1px solid black;
+  }
+}/*# sourceMappingURL=resume.css.map */

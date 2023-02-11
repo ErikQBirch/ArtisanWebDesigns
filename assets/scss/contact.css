@@ -1,0 +1,101 @@
+@media only all and (min-width: 0) {
+  main {
+    z-index: 1;
+    padding: 0;
+  }
+  main #hero {
+    background-color: black;
+    position: relative;
+    z-index: 0;
+    height: 60vh;
+  }
+  main #hero figure {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main #hero figure img {
+    height: 100%;
+  }
+  main #hero #banner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0vh;
+    z-index: 0;
+  }
+  main h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration: underline;
+  }
+  main div#contentHolder {
+    width: 50vw;
+    height: 50vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  main div#contentHolder a:link,
+  main div#contentHolder a:visited {
+    color: rgb(25, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 5rem;
+    text-decoration: none;
+    transition: color 0.75s;
+  }
+  main div#contentHolder a:link i,
+  main div#contentHolder a:visited i {
+    font-size: 5rem;
+  }
+  main div#contentHolder a:hover,
+  main div#contentHolder a:active {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media only all and (min-width: 760px) {
+  main div#contentHolder {
+    width: 50vw;
+    height: 50vw;
+  }
+  main div#contentHolder a:link i,
+  main div#contentHolder a:visited i {
+    font-size: 7.5rem;
+  }
+}
+@media only all and (min-width: 992px) {
+  main #hero figure img {
+    width: 100%;
+    height: 200%;
+  }
+  main #hero {
+    height: 80vh;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  main div#contentHolder {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80vw;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main div#contentHolder a:link i,
+  main div#contentHolder a:visited i {
+    font-size: 10rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,245 @@
+$mobileBannerImg: url("");
+$desktopBannerImg: url("");
+
+@import "hero";
+
+@media only all and (min-width: 0) {
+  main{
+    z-index: 1;
+    // #hero{
+    //   background-color: black;
+    //   position:relative;
+    //   z-index: 0;
+    //   height: 60vh;
+    //   figure{
+    //     height: 100%;
+    //     overflow:hidden;
+    //     display:flex;
+    //     align-items:center;
+    //     justify-content: center;;
+    //     img{
+    //       height: 100%;
+    //     }
+    //   }
+    //   #banner{
+    //     position: absolute;
+    //     // height: 80%;
+    //     // width: 80%;
+    //     height: 100%;
+    //     width: 100%;
+    //     background-color:rgba(0,0,0,0.5);
+    //     bottom:0vh;
+    //     z-index: 0;
+    //     // margin: 10%;
+    //     // display:none;
+    //   }
+    // }
+    @include mobileHero;
+    h1{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+      text-align:center;
+      text-decoration:underline;
+    }
+    #gallery{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      a:link,
+      a:visited{
+        position:relative;
+        overflow:hidden;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        font-family: 'Kalam', cursive;
+        text-align:center;
+        color:white;
+        width: 100%;
+        figure{
+          width: 100%;
+          height: 100%;
+          position: relative;
+          display:flex;
+          justify-content:center;
+          img{
+            width: 100%;
+            height: 100%;
+            // width: fit-content;
+            object-position: center;
+            opacity: 1;
+            transition: opacity 0.75s;
+          }
+          img[data-src]{
+            opacity: 0;
+          }
+        }
+        div{
+          position:absolute;
+          top:100%;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.75);
+          display:flex;
+          align-items:center;
+          justify-content: center;
+          transition: top 0.75s;
+        }
+      }
+      a:hover,
+      a:active{
+        div{
+          top:0;
+        }
+      }
+      a.About {
+        display:none;
+      }
+    }
+    #gallery{
+      a:nth-child(4n+1)
+      {
+        grid-column: 1/ span 2;
+      }
+      a:nth-child(4n+2)
+      {
+        grid-column: 3;
+        figure{
+          img{
+            height: 100%;
+            width: 200%;
+          }
+        }
+      }
+      a:nth-child(4n+3)
+      {
+        grid-column:1;
+        figure{
+          img{
+            height: 100%;
+            width: 200%;
+          }
+        }
+      }
+      a:nth-child(4n+4)
+      {
+        grid-column:2/ span 2;
+      }
+    }
+  }
+}
+@media only all and (min-width: 760px) {
+  main{
+    #hero{
+      figure{
+        img{
+        }
+      }
+      #banner{
+      }
+    }
+    #gallery{
+      a:link,
+      a:visited{
+        width: 100%;
+        height: 32.75vw;
+        font-size: 1.5rem;
+        img{
+          width: 200% !important;
+          height: 100%;
+        }
+        div{
+        }
+      }
+      a:hover,
+      a:active{
+        div{
+        }
+      }
+      a.About {
+        display:flex;
+      }
+    }
+    #gallery{
+      a:nth-child(3n+1)
+      {
+        grid-column: 1;
+      }
+      a:nth-child(3n+2)
+      {
+        grid-column: 2;
+        figure{
+          img{
+            width: 100%;
+          }
+        }
+      }
+      a:nth-child(3n+3)
+      {
+        grid-column: 3;
+        figure{
+          img{
+            width: 100%;
+          }
+        }
+      }
+      a:nth-child(3n+4)
+      {
+        grid-column: 1;
+      }
+    }
+  }
+}
+@media only all and (min-width: 992px) {
+  main{
+    // #hero{
+    //   figure{
+    //     img{
+    //       width: 100%;
+    //       height: 200%;
+    //     }
+    //   }
+    // }
+    @include medHero;
+    h1{
+      font-size: 3rem;
+    }
+    #gallery{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      a:link,
+      a:visited{
+        width: 100%;
+        height: 24.73vw;
+        font-size: 2.5rem;
+      }
+      a:hover,
+      a:active{
+        div{
+        }
+      }
+      a.About {
+        display:none;
+      }
+    }
+    #gallery{
+      a:nth-child(4n+1)
+      {
+        grid-column: 1;
+      }
+      a:nth-child(4n+2)
+      {
+        grid-column: 2;
+      }
+      a:nth-child(4n+3)
+      {
+        grid-column: 3;
+      }
+      a:nth-child(4n+4)
+      {
+        grid-column: 4;
+      }
+    }
+  }
+}
+@media only all and (min-width: 1200px) {
+}

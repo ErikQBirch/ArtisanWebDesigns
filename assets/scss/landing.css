@@ -1,0 +1,179 @@
+@media only all and (min-width: 0) {
+  main {
+    z-index: 1;
+  }
+  main #hero {
+    background-color: black;
+    position: relative;
+    z-index: 0;
+    height: 60vh;
+  }
+  main #hero figure {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main #hero figure img {
+    height: 100%;
+  }
+  main #hero #banner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0vh;
+    z-index: 0;
+  }
+  main h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration: underline;
+  }
+  main #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main #gallery a:link,
+  main #gallery a:visited {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kalam", cursive;
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  main #gallery a:link figure,
+  main #gallery a:visited figure {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  main #gallery a:link figure img,
+  main #gallery a:visited figure img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    opacity: 1;
+    transition: opacity 0.75s;
+  }
+  main #gallery a:link figure img[data-src],
+  main #gallery a:visited figure img[data-src] {
+    opacity: 0;
+  }
+  main #gallery a:link div,
+  main #gallery a:visited div {
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top 0.75s;
+  }
+  main #gallery a:hover div,
+  main #gallery a:active div {
+    top: 0;
+  }
+  main #gallery a.About {
+    display: none;
+  }
+  main #gallery a:nth-child(4n+1) {
+    grid-column: 1/span 2;
+  }
+  main #gallery a:nth-child(4n+2) {
+    grid-column: 3;
+  }
+  main #gallery a:nth-child(4n+2) figure img {
+    height: 100%;
+    width: 200%;
+  }
+  main #gallery a:nth-child(4n+3) {
+    grid-column: 1;
+  }
+  main #gallery a:nth-child(4n+3) figure img {
+    height: 100%;
+    width: 200%;
+  }
+  main #gallery a:nth-child(4n+4) {
+    grid-column: 2/span 2;
+  }
+}
+@media only all and (min-width: 760px) {
+  main #gallery a:link,
+  main #gallery a:visited {
+    width: 100%;
+    height: 32.75vw;
+    font-size: 1.5rem;
+  }
+  main #gallery a:link img,
+  main #gallery a:visited img {
+    width: 200% !important;
+    height: 100%;
+  }
+  main #gallery a.About {
+    display: flex;
+  }
+  main #gallery a:nth-child(3n+1) {
+    grid-column: 1;
+  }
+  main #gallery a:nth-child(3n+2) {
+    grid-column: 2;
+  }
+  main #gallery a:nth-child(3n+2) figure img {
+    width: 100%;
+  }
+  main #gallery a:nth-child(3n+3) {
+    grid-column: 3;
+  }
+  main #gallery a:nth-child(3n+3) figure img {
+    width: 100%;
+  }
+  main #gallery a:nth-child(3n+4) {
+    grid-column: 1;
+  }
+}
+@media only all and (min-width: 992px) {
+  main #hero figure img {
+    width: 100%;
+    height: 200%;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  main #gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  main #gallery a:link,
+  main #gallery a:visited {
+    width: 100%;
+    height: 24.73vw;
+    font-size: 2.5rem;
+  }
+  main #gallery a.About {
+    display: none;
+  }
+  main #gallery a:nth-child(4n+1) {
+    grid-column: 1;
+  }
+  main #gallery a:nth-child(4n+2) {
+    grid-column: 2;
+  }
+  main #gallery a:nth-child(4n+3) {
+    grid-column: 3;
+  }
+  main #gallery a:nth-child(4n+4) {
+    grid-column: 4;
+  }
+}/*# sourceMappingURL=landing.css.map */

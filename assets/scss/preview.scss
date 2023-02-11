@@ -1,0 +1,173 @@
+$mobileBannerImg: url("");
+$desktopBannerImg: url("");
+
+@media only all and (min-width: 0) {
+main{
+  #side1{
+    position:relative;
+    #carousel{
+      width: 100%;
+      height: 60vh;
+      overflow:hidden;
+      outline: 5px solid black;
+      // border: 5px solid black;
+      #slideHolder{
+        display:flex;
+        width: fit-content;
+        height: 60vh;
+        figure{
+          width: 100vw;
+          height: 60vh;
+          overflow:hidden;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          img{
+            height: 60vh;
+            // width: 100vw;
+          }
+        }
+      }
+      #slideControls{
+        position:absolute;
+        top:0;
+        height: 60vh;
+        width: 99vw;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        button{
+          color:rgba(255,255,255,0.75);
+          font-size: 5rem;
+          width: 3.5rem;
+          background: none;
+          border:none;          
+        }
+        button:hover,
+        button:active{
+          background-color: rgba(0,0,0,0.5);
+          border-radius: 10px;
+        }
+      }
+    }
+    #carousel_nav{
+      display:flex;
+      width: 50%;
+      justify-content: space-around;
+      margin: 1rem auto;
+      div{}
+      div.currentBtn{
+        color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  #side2{
+    #infoTag{
+      width: 90vw;
+      margin: 2.5rem auto;
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+      h1{
+        font-family: 'Kalam', cursive;
+        text-align:center;
+        margin-bottom:0;
+      }
+      span{
+        width: 100%;
+        text-align:center;
+      }
+      p{
+        margin: 1rem 0;
+      }
+      div{
+        width: 100%;
+        display:flex;
+        justify-content: space-evenly;
+        button,
+        a:link,
+        a:visited{
+          text-decoration:none;
+          color:white;
+          background-color: rgba(25,25,25,1);
+          width: 5rem;
+          padding: 0.5rem 0;
+          text-align:center;
+          border-radius: 5px;
+          border:none;
+        }
+        button:hover,
+        button:active,
+        a:hover,
+        a:active{}
+      }
+    }
+  }
+}
+}
+@media only all and (min-width: 760px) {
+
+}
+@media only all and (min-width: 992px) {
+  main{
+    display:flex;
+    margin-top: 5rem;
+    align-items:flex-start;
+    #side1{
+      width: 50%;
+      #carousel{
+        width: 45vw;
+        margin: 0 auto;
+        #slideHolder{
+          figure{
+            width: 45vw;
+            img{
+            }
+          }
+        }
+        #slideControls{
+          width: 45vw;
+          button{     
+          }
+          button:hover,
+          button:active{
+          }
+        }
+      }
+      #carousel_nav{
+        div{}
+        div.currentBtn{
+
+        }
+      }
+    }
+    #side2{
+      width: 50%;
+      #infoTag{
+        width: 35vw;
+        margin:0 auto;
+        h1{
+          margin:0;
+          font-size: 3rem;
+        }
+        span{
+        }
+        p{
+          font-size:1.5rem;
+        }
+        div{
+          button,
+          a:link,
+          a:visited{
+          }
+          button:hover,
+          button:active,
+          a:hover,
+          a:active{}
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 1200px) {
+}

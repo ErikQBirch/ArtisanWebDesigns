@@ -1,0 +1,53 @@
+@import "hero";
+
+@media only all and (min-width: 0) { //mobile
+  main{
+    z-index: 1;
+    padding:0;
+    @include mobileHero;
+    h1{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+      text-align:center;
+      text-decoration:underline;
+    }
+    div#mainContent{
+      width: 80%;
+      margin: auto;
+      h2{
+        font-family: 'Kalam', cursive;
+      }
+      p{
+        margin-bottom: 2.5rem;
+      }
+      figure{
+        width: 10rem;
+        margin: 0 auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 760px) {//min
+
+}
+@media only all and (min-width: 992px) { //med
+  main{
+    @include medHero;
+    h1{
+      font-size: 3rem;
+    }
+    div#mainContent{
+      display:flex;
+      div#erik,
+      div#tripleA{
+        width:100%;
+        padding: 0 2.5rem;
+      }
+    }
+  }
+}
+@media only all and (min-width: 1200px) { //max
+}

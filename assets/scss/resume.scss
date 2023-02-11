@@ -1,0 +1,21 @@
+@import "hero";
+
+@media only all and (min-width: 0) { //mobile
+  main{
+    z-index: 1;
+    display:flex;
+    justify-content:center;
+    a{
+      border: 1px solid black;
+    }
+  }
+}
+@media only all and (min-width: 760px) {//min
+
+}
+@media only all and (min-width: 992px) { //med
+  main{
+  }
+}
+@media only all and (min-width: 1200px) { //max
+}
