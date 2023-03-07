@@ -120,7 +120,6 @@
   main #gallery a:link img,
   main #gallery a:visited img {
     width: 200% !important;
-    height: 100%;
   }
   main #gallery a.About {
     display: flex;

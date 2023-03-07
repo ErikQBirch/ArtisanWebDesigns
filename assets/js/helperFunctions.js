@@ -39,10 +39,16 @@ export const helperFunctions = {
     let element = document.createElement(paramElement);
     element.id = paramId;
     element.setAttribute('class', paramClass);
+
+    if (paramText != '') {
+      element.innerHTML = paramText;
+    }
+
     switch (paramElement) {
       case 'img':
         element.setAttribute('src', paramLink);
         element.setAttribute('alt', paramText);
+        element.innerHTML = '';
         break;
       case 'a':
         element.setAttribute('href', paramLink);
@@ -64,9 +70,7 @@ export const helperFunctions = {
       default:
         break;
     }
-    if (paramText != '') {
-      element.innerHTML = paramText;
-    }
+
     return element;
   },
   getCurrentPage: function(
