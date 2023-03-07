@@ -38,7 +38,7 @@ export const previewDB = {
   "project04": {
     "id" : "04",
     "name": "Astha Rai",
-    "thumbnailPath": "assets/resources/imgs/placeholder2.png",
+    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
       "previewPath": "pages/preview.html?id=04",
       "sitePath":"https://erikqb3.github.io/ProjectWorkBench/Astha_Rai/index.html",
@@ -51,7 +51,7 @@ export const previewDB = {
   "project05": {
     "id" : "05",
     "name": "Pokémon<br>Cafe Mix<br>(Fan-Art)",
-    "thumbnailPath": "assets/resources/imgs/placeholder2.png",
+    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
       "previewPath": "pages/preview.html?id=05",
       "sitePath":"youtube.com",
@@ -63,7 +63,7 @@ export const previewDB = {
   "project06": {
     "id" : "06",
     "name": "Pokemon<br>Ro-Sham-Bo!",
-    "thumbnailPath": "assets/resources/imgs/placeholder2.png",
+    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
       "previewPath": "pages/preview.html?id=06",
       "sitePath":"youtube.com",
@@ -75,7 +75,7 @@ export const previewDB = {
   "project07": {
     "id" : "07",
     "name": "Family History Bingo",
-    "thumbnailPath": "assets/resources/imgs/placeholder2.png",
+    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
       "previewPath": "pages/preview.html?id=07",
       "sitePath":"youtube.com",
@@ -87,7 +87,7 @@ export const previewDB = {
   "project08": {
     "id" : "08",
     "name": "Zelda<br>BOTW Bazaar<br>(Fan-Art)",
-    "thumbnailPath": "assets/resources/imgs/placeholder2.png",
+    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
       "previewPath": "pages/preview.html?id=08",
       "sitePath":"youtube.com",
@@ -99,7 +99,7 @@ export const previewDB = {
   "project09": {
     "id" : "09",
     "name": "About",
-    "thumbnailPath": "assets/resources/imgs/placeholder2.png",
+    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
       "previewPath": "pages/about.html",
       "sitePath":"youtube.com",

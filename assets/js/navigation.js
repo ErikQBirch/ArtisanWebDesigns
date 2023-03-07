@@ -35,7 +35,7 @@ export const navigation = {
   logo_molecule: function(
     div = helperFunctions.generateElement('div',"logoArea"),
     a_tag = helperFunctions.generateElement('a',"logoLink","","",`${this.pathAdjuster[0]}`),
-    img_tag = helperFunctions.generateElement('img',"","","logo",`${this.pathAdjuster[0]}/assets/resources/imgs/logo_alt.png`)
+    img_tag = helperFunctions.generateElement('img',"","","logo",`${this.pathAdjuster[0]}assets/resources/imgs/logo_alt.png`)
   ){
     div = helperFunctions.appendChildren(div, a_tag, this.extraNav_molecule());
     a_tag.appendChild(img_tag);
