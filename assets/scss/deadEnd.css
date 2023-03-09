@@ -23,28 +23,28 @@
     bottom: 0vh;
     z-index: 0;
   }
-  main h1 {
+  main #hero {
+    height: 100vh;
+    cursor: pointer;
+  }
+  main #hero figure {
+    filter: blur(10px);
+  }
+  main #hero div#banner {
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  main #hero div#banner h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     text-align: center;
-    text-decoration: underline;
   }
-  main div#mainContent {
-    width: 80%;
-    margin: auto;
-  }
-  main div#mainContent h2 {
-    font-family: "Kalam", cursive;
-  }
-  main div#mainContent p {
-    margin-bottom: 2.5rem;
-  }
-  main div#mainContent figure {
-    width: 10rem;
-    margin: 0 auto;
-  }
-  main div#mainContent figure img {
-    width: 100%;
+  main #hero div#banner h2 {
+    text-align: center;
   }
 }
 @media only all and (min-width: 760px) {
@@ -62,15 +62,7 @@
   main #hero figure {
     align-items: center;
   }
-  main h1 {
-    font-size: 3rem;
+  main #hero {
+    height: 100vh;
   }
-  main div#mainContent {
-    display: flex;
-  }
-  main div#mainContent div#erik,
-  main div#mainContent div#tripleA {
-    width: 100%;
-    padding: 0 2.5rem;
-  }
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=deadEnd.css.map */

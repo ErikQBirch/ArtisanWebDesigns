@@ -53,8 +53,8 @@ export const previewDB = {
     "name": "Pokémon<br>Cafe Mix<br>(Fan-Art)",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
-      "previewPath": "pages/preview.html?id=05",
-      "sitePath":"youtube.com",
+      "previewPath": "pages/deadEnd.html",
+      "sitePath":"pages/deadEnd.html",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],
       "description" : ""
@@ -65,8 +65,8 @@ export const previewDB = {
     "name": "Pokemon<br>Ro-Sham-Bo!",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
-      "previewPath": "pages/preview.html?id=06",
-      "sitePath":"youtube.com",
+      "previewPath": "pages/deadEnd.html",
+      "sitePath":"pages/deadEnd.html",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],
       "description" : ""
@@ -77,8 +77,8 @@ export const previewDB = {
     "name": "Family History Bingo",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
-      "previewPath": "pages/preview.html?id=07",
-      "sitePath":"youtube.com",
+      "previewPath": "pages/deadEnd.html",
+      "sitePath":"pages/deadEnd.html",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],
       "description" : ""
@@ -89,8 +89,8 @@ export const previewDB = {
     "name": "Zelda<br>BOTW Bazaar<br>(Fan-Art)",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
-      "previewPath": "pages/preview.html?id=08",
-      "sitePath":"youtube.com",
+      "previewPath": "pages/deadEnd.html",
+      "sitePath":"pages/deadEnd.html",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],
       "description" : ""
@@ -101,8 +101,8 @@ export const previewDB = {
     "name": "About",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "preview" : {
-      "previewPath": "pages/about.html",
-      "sitePath":"youtube.com",
+      "previewPath": "pages/deadEnd.html",
+      "sitePath":"pages/deadEnd.html",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],
       "description" : ""

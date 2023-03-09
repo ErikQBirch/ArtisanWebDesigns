@@ -9,6 +9,7 @@
   }
   main #hero figure {
     height: 100%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -106,6 +107,15 @@
   }
 }
 @media only all and (min-width: 760px) {
+  main #hero {
+    height: 75vh;
+  }
+  main #hero figure {
+    align-items: flex-start;
+  }
+  main #hero figure img {
+    width: 100%;
+  }
   main #gallery a:link,
   main #gallery a:visited {
     width: 100%;
@@ -139,11 +149,8 @@
   }
 }
 @media only all and (min-width: 992px) {
-  main #hero {
-    height: 75vh;
-  }
-  main #hero figure img {
-    width: 100%;
+  main #hero figure {
+    align-items: center;
   }
   main h1 {
     font-size: 3rem;

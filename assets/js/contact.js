@@ -1,5 +1,4 @@
 import { helperFunctions } from "./helperFunctions.js";
-import { skillDB } from "../resources/skillDB.js";
 
 const pageStuff = {
   constructHTML: function(

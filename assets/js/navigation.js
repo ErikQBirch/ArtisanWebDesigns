@@ -1,7 +1,7 @@
 import { helperFunctions } from "./helperFunctions.js"
 
 export const navigation = {
-  pageList: ["about","preview","resume","contact","skills"],
+  pageList: ["about","preview","resume","contact","skills","deadEnd"],
   pathAdjuster: [],
   currentPage:  "",
   extraNav_molecule: function(
