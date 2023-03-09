@@ -102,14 +102,7 @@ $desktopBannerImg: url("");
 }
 @media only all and (min-width: 760px) {
   main{
-    #hero{
-      figure{
-        img{
-        }
-      }
-      #banner{
-      }
-    }
+
     #gallery{
       a:link,
       a:visited{
@@ -172,7 +165,7 @@ $desktopBannerImg: url("");
     //     }
     //   }
     // }
-    @include medHero;
+    @include minHero;
     h1{
       font-size: 3rem;
     }

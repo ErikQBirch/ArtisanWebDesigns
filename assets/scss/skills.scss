@@ -64,7 +64,9 @@
   }
 }
 @media only all and (min-width: 760px) {//min
-
+  main{
+    @include minHero;
+  }
 }
 @media only all and (min-width: 992px) { //med
   main{

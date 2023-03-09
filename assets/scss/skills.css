@@ -4,26 +4,22 @@
     padding: 0;
   }
   main #hero {
-    background-color: black;
     position: relative;
     z-index: 0;
     height: 60vh;
   }
   main #hero figure {
     height: 100%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  main #hero figure img {
-    height: 100%;
-  }
   main #hero #banner {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     bottom: 0vh;
     z-index: 0;
   }
@@ -52,10 +48,20 @@
     width: 100%;
   }
 }
-@media only all and (min-width: 992px) {
+@media only all and (min-width: 760px) {
+  main #hero {
+    height: 75vh;
+  }
+  main #hero figure {
+    align-items: flex-start;
+  }
   main #hero figure img {
     width: 100%;
-    height: 200%;
+  }
+}
+@media only all and (min-width: 992px) {
+  main #hero figure {
+    align-items: center;
   }
   main h1 {
     font-size: 3rem;
