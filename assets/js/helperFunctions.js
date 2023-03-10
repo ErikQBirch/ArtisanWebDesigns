@@ -1,4 +1,8 @@
 export const helperFunctions = {
+  addHoverTitle: function(element,titleText=""){
+    element.setAttribute("title",titleText);
+    return element;
+  },
   appendChildren: function (parent, ...elementChildren) {
     for (let i in elementChildren) {
       parent.appendChild(elementChildren[i]);
@@ -60,13 +64,21 @@ export const helperFunctions = {
             console.log(window.location.href);
             window.location.replace(paramLink);
           })
-        }
+        };
+        break;
       case 'input':
         element.setAttribute('type', paramClass);
         element.setAttribute('name', paramId);
+        break;
       case 'source':
         element.setAttribute('src', paramLink);
         element.setAttribute('type', paramClass);
+        break;
+      case 'meta':
+        element.id = "";
+        element.setAttribute('name', paramId);
+        element.setAttribute('content',paramText);
+        break;
       default:
         break;
     }
@@ -138,6 +150,18 @@ export const helperFunctions = {
         loadImages(img);
       });
     }
+  },
+  metaInfo: function(
+    content = {
+      "keywordList": "",
+      "description":""
+    },
+    head = document.querySelector('head'),
+    keywords = this.generateElement('meta',"keywords","",content.keywordList),
+    description = this.generateElement('meta',"description","",content.description),
+    author = this.generateElement('meta',"author","","Erik Q. Birch"),
+  ){
+    head = helperFunctions.appendChildren(head, keywords,description,author)
   },
   nestChildren: function(parent, ...elementChildren){
     // console.log(elementChildren)

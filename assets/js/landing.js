@@ -51,6 +51,9 @@ const pageStuff = {
     thumbNail = helperFunctions.customSpecialElements(img_tag,projectObj.thumbnailPath,projectObj.name)
   ){
     figure_tag.appendChild(thumbNail);
+    overlay.style.color = projectObj.color;
+    // overlay.style.fontWeight = "bolder";
+    overlay.style.textShadow = "0 0 2.5px white";
     a_tag = helperFunctions.appendChildren(a_tag, figure_tag, overlay);
     return a_tag;
   }

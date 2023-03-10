@@ -3,18 +3,20 @@ export const previewDB = {
     "id" : "01",
     "name": "Creative<br>Keturah",
     "thumbnailPath": "assets/resources/imgs/previewPics/CreativeKeturah/CK_thmb.webp",
+    "color":"red",
     "preview" : {
       "previewPath": "pages/preview.html?id=01",
       "sitePath":"https://erikqbirch.github.io/CreativeKeturah/",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/previewPics/CreativeKeturah/CK1.webp","assets/resources/imgs/previewPics/CreativeKeturah/CK2.webp","assets/resources/imgs/previewPics/CreativeKeturah/CK3.webp","assets/resources/imgs/previewPics/CreativeKeturah/CK4.webp","assets/resources/imgs/previewPics/CreativeKeturah/CK5.webp"],
-      "description" : "With permission from Keturah Williams herself, a vast majority of these amazing illustrations were pulled from her instagram and given place in an website suitable for their elegance. With one or two interviews over zoom, titles and descriptions were also given to Keturah's great works, but the interpration of her masterpieces is truly up to the viewers."
+      "description" : "With permission from Keturah Williams herself, a vast majority of these amazing illustrations were pulled from her instagram and given place in an website suitable for their elegance. With one or two interviews over zoom, titles and descriptions were also given to Keturah's great works, but later scrapped. <br>The main focus of the portfolio is the artwork Keturah produced; the interpration of her masterpieces is truly up to the viewers to decide."
     }
   },
   "project02": {
     "id" : "02",
     "name": "Sapien Designs<br>Multi-Media",
     "thumbnailPath": "assets/resources/imgs/previewPics/SapienDesigns/SDthb.png",
+    "color":"orange",
     "preview" : {
       "previewPath": "pages/preview.html?id=02",
       "sitePath":"https://seo.sapiendesigns.com/",
@@ -27,6 +29,7 @@ export const previewDB = {
     "id" : "03",
     "name": "Difference<br>Auto-Detailing",
     "thumbnailPath": "assets/resources/imgs/previewPics/DifferenceAutoDetailing/Diff_thmb.webp",
+    "color":"yellow",
     "preview" : {
       "previewPath": "pages/preview.html?id=03",
       "sitePath":"https://erikqbirch.github.io/DifferenceAutoDetailing/index.html",
@@ -37,21 +40,26 @@ export const previewDB = {
   },
   "project04": {
     "id" : "04",
-    "name": "Astha Rai",
+    // "name": "Astha Rai",
+    "name": "Empty Slot",
+    // "thumbnailPath": "assets/resources/imgs/PreviewPics/AsthaRai/AR_thmb.webp",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "color":"lime",
     "preview" : {
-      "previewPath": "pages/preview.html?id=04",
+      // "previewPath": "pages/preview.html?id=04",
+      "previewPath": "pages/deadEnd.html",
       "sitePath":"https://erikqb3.github.io/ProjectWorkBench/Astha_Rai/index.html",
       "year":2022,
-      "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],
+      "carouselImgs" :["assets/resources/imgs/PreviewPics/AsthaRai/AR1.webp"],
       // "description" : "This website was created with permission from hobbyist creative writer and friend: Jeremy Cole. He shared with me a few examples of his work when we lived in the same apartment at the start of our college experiences several years ago and I thoroughly enjoyed reading them all! <br><br> Loving his writing style and stories so much, I asked and obtained permission to create a portoflio website displaying his works. Many of the stories displayed on the website are original works of his own along with a few selected works of fan-art; all of them worthy of reading. <br><br> This website was constructed using Boot Strap software. It is still in development due to lack of textual content and cover images,  but additions and improvements will be made in the future."
-      "description" : "LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, "
+      "description" : "I connected with Astha Rai at the start of the year. After obtaining permission from Astha to use her content, I constructed this website free of charge for the sole purpose of further developing my coding skills and style. <br>A bit of trial and error was had due to the privleage of free-range creativity, but in the end I was able to produce a website suitable to display Astha's magnificent works!"
     }
   },
   "project05": {
     "id" : "05",
-    "name": "Pokémon<br>Cafe Mix<br>(Fan-Art)",
+    "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "color":"cyan",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -62,8 +70,9 @@ export const previewDB = {
   },
   "project06": {
     "id" : "06",
-    "name": "Pokemon<br>Ro-Sham-Bo!",
+    "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "color":"blue",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -74,8 +83,9 @@ export const previewDB = {
   },
   "project07": {
     "id" : "07",
-    "name": "Family History Bingo",
+    "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "color":"rgb(103,25,255)",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -86,8 +96,9 @@ export const previewDB = {
   },
   "project08": {
     "id" : "08",
-    "name": "Zelda<br>BOTW Bazaar<br>(Fan-Art)",
+    "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "color":"pink",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -100,6 +111,7 @@ export const previewDB = {
     "id" : "09",
     "name": "About",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "color":"white",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
