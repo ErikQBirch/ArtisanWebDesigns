@@ -53,9 +53,12 @@ main{
     #carousel_nav{
       display:flex;
       width: 50%;
-      justify-content: space-around;
+      justify-content: center;
       margin: 1rem auto;
-      div{}
+      div{
+        margin: 0 0.25rem;
+        cursor:pointer;
+      }
       div.currentBtn{
         color: rgba(0,0,0,0.5);
       }

@@ -10,6 +10,7 @@
   }
   main #hero figure {
     height: 100%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -19,6 +20,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0);
     bottom: 0vh;
     z-index: 0;
   }
@@ -72,11 +74,8 @@
   }
 }
 @media only all and (min-width: 992px) {
-  main #hero {
-    height: 75vh;
-  }
-  main #hero figure img {
-    width: 100%;
+  main #hero figure {
+    align-items: center;
   }
   main #hero {
     height: 80vh;

@@ -5,10 +5,12 @@
   main #hero {
     position: relative;
     z-index: 0;
-    height: 60vh;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   main #hero figure {
-    height: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -21,6 +23,17 @@
     width: 100%;
     bottom: 0vh;
     z-index: 0;
+  }
+  main #hero #banner {
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
   main h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -107,9 +120,6 @@
   }
 }
 @media only all and (min-width: 760px) {
-  main #hero {
-    height: 75vh;
-  }
   main #hero figure {
     align-items: flex-start;
   }
@@ -178,5 +188,13 @@
   }
   main #gallery a:nth-child(4n+4) {
     grid-column: 4;
+  }
+}
+@media only all and (min-width: 1200px) {
+  main #hero {
+    height: 75vh;
+  }
+  main #hero figure {
+    height: 100%;
   }
 }/*# sourceMappingURL=landing.css.map */

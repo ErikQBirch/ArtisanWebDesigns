@@ -40,18 +40,14 @@ export const previewDB = {
   },
   "project04": {
     "id" : "04",
-    // "name": "Astha Rai",
-    "name": "Empty Slot",
-    // "thumbnailPath": "assets/resources/imgs/PreviewPics/AsthaRai/AR_thmb.webp",
-    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "name": "Astha Rai",
+    "thumbnailPath": "assets/resources/imgs/PreviewPics/AsthaRai/AR_thmb.webp",
     "color":"lime",
     "preview" : {
-      // "previewPath": "pages/preview.html?id=04",
-      "previewPath": "pages/deadEnd.html",
+      "previewPath": "pages/preview.html?id=04",
       "sitePath":"https://erikqb3.github.io/ProjectWorkBench/Astha_Rai/index.html",
       "year":2022,
-      "carouselImgs" :["assets/resources/imgs/PreviewPics/AsthaRai/AR1.webp"],
-      // "description" : "This website was created with permission from hobbyist creative writer and friend: Jeremy Cole. He shared with me a few examples of his work when we lived in the same apartment at the start of our college experiences several years ago and I thoroughly enjoyed reading them all! <br><br> Loving his writing style and stories so much, I asked and obtained permission to create a portoflio website displaying his works. Many of the stories displayed on the website are original works of his own along with a few selected works of fan-art; all of them worthy of reading. <br><br> This website was constructed using Boot Strap software. It is still in development due to lack of textual content and cover images,  but additions and improvements will be made in the future."
+      "carouselImgs" :["assets/resources/imgs/PreviewPics/AsthaRai/AR1.webp","assets/resources/imgs/PreviewPics/AsthaRai/AR2.webp"],
       "description" : "I connected with Astha Rai at the start of the year. After obtaining permission from Astha to use her content, I constructed this website free of charge for the sole purpose of further developing my coding skills and style. <br>A bit of trial and error was had due to the privleage of free-range creativity, but in the end I was able to produce a website suitable to display Astha's magnificent works!"
     }
   },
@@ -113,7 +109,7 @@ export const previewDB = {
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
     "color":"white",
     "preview" : {
-      "previewPath": "pages/deadEnd.html",
+      "previewPath": "pages/about.html",
       "sitePath":"pages/deadEnd.html",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],

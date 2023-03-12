@@ -59,12 +59,16 @@ export const helperFunctions = {
         break;
       case 'button':
       case 'btn':
-        if (paramLink){
+        if (paramClass.includes('clipboard') && paramLink){
+          navigator.clipboard.writeText(paramLink);
+          console.log(paramLink);
+        }
+        else if (paramLink){
           element.addEventListener('click',()=>{
             console.log(window.location.href);
             window.location.replace(paramLink);
           })
-        };
+        }
         break;
       case 'input':
         element.setAttribute('type', paramClass);
