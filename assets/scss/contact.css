@@ -73,6 +73,16 @@
   }
 }
 @media only all and (min-width: 760px) {
+  main #hero figure {
+    align-items: flex-start;
+  }
+  main #hero figure img {
+    width: 100%;
+  }
+  main #hero #banner {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
   main div#contentHolder {
     width: 50vw;
     height: 50vw;

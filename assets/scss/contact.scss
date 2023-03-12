@@ -46,6 +46,7 @@
 }
 @media only all and (min-width: 760px) {//min
   main{
+    @include minHero;
     div#contentHolder{
       width: 50vw;
       height: 50vw;
