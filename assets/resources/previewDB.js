@@ -41,7 +41,7 @@ export const previewDB = {
   "project04": {
     "id" : "04",
     "name": "Astha Rai",
-    "thumbnailPath": "assets/resources/imgs/PreviewPics/AsthaRai/AR_thmb.webp",
+    "thumbnailPath": "assets/resources/imgs/previewPics/AsthaRai/AR_thmb.webp",
     "color":"lime",
     "preview" : {
       "previewPath": "pages/preview.html?id=04",
