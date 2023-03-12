@@ -64,7 +64,7 @@
   main{
     @include medHero;
     #hero{
-      height: 80vh;
+      height: 75vh;
     }
     h1{
       font-size: 3rem;
@@ -86,4 +86,5 @@
   }
 }
 @media only all and (min-width: 1200px) { //max
+  @include maxHero;
 }

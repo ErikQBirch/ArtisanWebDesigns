@@ -11,7 +11,7 @@ const pageStuff = {
     hero_tag = helperFunctions.generateElement('div',"hero"),
     figure_tag = helperFunctions.generateElement('figure'),
     img_tag = helperFunctions.generateElement('img',"","","","../assets/resources/imgs/background.webp"),
-    banner_tag = helperFunctions.generateElement('div', "banner")
+    banner_tag = helperFunctions.generateElement('div', "banner", "","Let me know if you want to do business...")
   ){
     figure_tag.appendChild(img_tag);
     hero_tag = helperFunctions.appendChildren(hero_tag, figure_tag, banner_tag)

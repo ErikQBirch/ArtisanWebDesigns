@@ -52,4 +52,5 @@ main {
   }
 }
 @media only all and (min-width: 1200px) { //max
+  @include maxHero;
 }
