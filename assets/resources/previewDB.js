@@ -106,7 +106,7 @@ export const previewDB = {
   "project09": {
     "id" : "09",
     "name": "About",
-    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "thumbnailPath": "assets/resources/imgs/me.jpg",
     "color":"white",
     "preview" : {
       "previewPath": "pages/about.html",
