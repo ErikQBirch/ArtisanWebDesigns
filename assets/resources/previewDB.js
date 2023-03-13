@@ -9,7 +9,7 @@ export const previewDB = {
       "sitePath":"https://erikqbirch.github.io/CreativeKeturah/",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/previewPics/CreativeKeturah/CK1.webp","assets/resources/imgs/previewPics/CreativeKeturah/CK2.webp","assets/resources/imgs/previewPics/CreativeKeturah/CK3.webp","assets/resources/imgs/previewPics/CreativeKeturah/CK4.webp","assets/resources/imgs/previewPics/CreativeKeturah/CK5.webp"],
-      "description" : "With permission from Keturah Williams herself, a vast majority of these amazing illustrations were pulled from her instagram and given place in an website suitable for their elegance. With one or two interviews over zoom, titles and descriptions were also given to Keturah's great works, but later scrapped. <br>The main focus of the portfolio is the artwork Keturah produced; the interpration of her masterpieces is truly up to the viewers to decide."
+      "description" : "With permission from Keturah Williams herself, a vast majority of these amazing illustrations were pulled from her instagram and given place in an website suitable for their elegance. With one or two interviews over zoom, titles and descriptions were also given to Keturah's great works, but later scrapped.<br><br>The main focus of the portfolio is the artwork Keturah produced; the interpration of her masterpieces is truly up to the viewers to decide."
     }
   },
   "project02": {
@@ -48,7 +48,7 @@ export const previewDB = {
       "sitePath":"https://erikqbirch.github.io/AsthaRai/",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/previewPics/AsthaRai/AR1.webp","assets/resources/imgs/previewPics/AsthaRai/AR2.webp"],
-      "description" : "I connected with Astha Rai at the start of the year. After obtaining permission from Astha to use her content, I constructed this website free of charge for the sole purpose of further developing my coding skills and style. <br>A bit of trial and error was had due to the privleage of free-range creativity, but in the end I was able to produce a website suitable to display Astha's magnificent works!"
+      "description" : "I connected with Astha Rai at the start of the year. After obtaining permission from Astha to use her content, I constructed this website free of charge for the sole purpose of further developing my coding skills and style.<br><br>A bit of trial and error was had due to the privleage of free-range creativity, but in the end I was able to produce a website suitable to display Astha's magnificent works!"
     }
   },
   "project05": {
