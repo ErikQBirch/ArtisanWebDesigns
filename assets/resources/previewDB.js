@@ -47,7 +47,7 @@ export const previewDB = {
       "previewPath": "pages/preview.html?id=04",
       "sitePath":"https://erikqbirch.github.io/AsthaRai/",
       "year":2022,
-      "carouselImgs" :["assets/resources/imgs/PreviewPics/AsthaRai/AR1.webp","assets/resources/imgs/PreviewPics/AsthaRai/AR2.webp"],
+      "carouselImgs" :["assets/resources/imgs/previewPics/AsthaRai/AR1.webp","assets/resources/imgs/previewPics/AsthaRai/AR2.webp"],
       "description" : "I connected with Astha Rai at the start of the year. After obtaining permission from Astha to use her content, I constructed this website free of charge for the sole purpose of further developing my coding skills and style. <br>A bit of trial and error was had due to the privleage of free-range creativity, but in the end I was able to produce a website suitable to display Astha's magnificent works!"
     }
   },
