@@ -90,11 +90,14 @@
   main #side2 #infoTag div {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   main #side2 #infoTag div button,
   main #side2 #infoTag div a:link,
   main #side2 #infoTag div a:visited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
     background-color: rgb(25, 25, 25);
@@ -103,6 +106,7 @@
     text-align: center;
     border-radius: 5px;
     border: none;
+    margin: 0.5rem;
   }
   main #preview {
     position: fixed;

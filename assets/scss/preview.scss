@@ -94,10 +94,13 @@ main{
       div{
         width: 100%;
         display:flex;
-        justify-content: space-evenly;
+        justify-content: center;
         button,
         a:link,
         a:visited{
+          display:flex;
+          align-items:center;
+          justify-content: center;
           text-decoration:none;
           color:white;
           background-color: rgba(25,25,25,1);
@@ -106,6 +109,7 @@ main{
           text-align:center;
           border-radius: 5px;
           border:none;
+          margin: 0.5rem;
         }
         button:hover,
         button:active,

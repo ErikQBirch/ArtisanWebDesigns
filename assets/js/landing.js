@@ -1,5 +1,5 @@
 import { helperFunctions } from "./helperFunctions.js";
-import { previewDB } from "../resources/previewDB.js";
+import { allProjects_DB } from "../resources/allProjects_DB.js";
 
 const pageStuff = {
   constructHTML: function(
@@ -10,17 +10,20 @@ const pageStuff = {
     helperFunctions.lazyLoading();
   },
   gallery: function(
-    gallery_tag = helperFunctions.generateElement('section',"gallery")
+    gallery_tag = helperFunctions.generateElement('section',"gallery"),
+    count = 0
   ){
-    // console.log(previewDB);
-    for (let project in previewDB){
-      // console.log(previewDB[project]);
-      let element = this.projectArticle(previewDB[project])
-      if (previewDB[project].name == "About"){
-        element.classList.add('About')
+    for (let project in allProjects_DB){
+        if (count < 9){
+          let element = this.projectArticle(allProjects_DB[project])
+          if (allProjects_DB[project].name == "About"){
+            element.classList.add('About')
+          }
+          gallery_tag.appendChild(element);
+          count++;
       }
-      gallery_tag.appendChild(element);
     }
+    
     
     return gallery_tag;
   },
