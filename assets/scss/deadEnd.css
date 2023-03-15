@@ -2,6 +2,7 @@
   main {
     z-index: 1;
     padding: 0;
+    margin: 0;
   }
   main #hero {
     position: relative;
@@ -35,13 +36,23 @@
   }
   main #hero {
     height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
     cursor: pointer;
   }
   main #hero figure {
     filter: blur(10px);
+    height: 100%;
+  }
+  main #hero figure img {
+    height: 100%;
   }
   main #hero div#banner {
     background-color: rgba(0, 0, 0, 0.55);
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,12 +60,14 @@
     color: white;
   }
   main #hero div#banner h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
+    font-family: "Kalam", cursive;
     text-align: center;
   }
   main #hero div#banner h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    line-height: 2rem;
+    font-weight: lighter;
   }
 }
 @media only all and (min-width: 760px) {
@@ -68,23 +81,13 @@
     font-size: 1.5rem;
     line-height: 2rem;
   }
-}
-@media only all and (min-width: 992px) {
   main #hero {
-    height: 75vh;
-  }
-  main #hero figure {
-    align-items: center;
-    height: 75vh;
+    cursor: pointer;
   }
   main #hero figure img {
-    width: 100%;
+    width: 200%;
   }
-  main #hero #banner {
-    font-size: 1.75rem;
-    line-height: 2.5rem;
-  }
-  main #hero {
-    height: 100vh;
+  main #hero div#banner h2 {
+    line-height: 3rem;
   }
 }/*# sourceMappingURL=deadEnd.css.map */

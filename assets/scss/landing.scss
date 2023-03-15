@@ -67,8 +67,11 @@ $desktopBannerImg: url("");
           top:0;
         }
       }
-      a.About {
-        display:none;
+      a:focus{
+        border: 5px solid rgb(0,75,255);;
+      }
+      a.About { 
+        display:none;     
       }
     }
     #gallery{

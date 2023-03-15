@@ -9,23 +9,31 @@ const pageStuff = {
       imgArray = prevObj.preview.carouselImgs,
       carousel_tag = helperFunctions.generateElement('div',"carousel"),
       slideHolder = helperFunctions.generateElement('div',"slideHolder"),
-      carousel_nav = helperFunctions.generateElement('div', "carousel_nav")
+      slideControls = this.carousel_slideControls(),
+      carousel_nav = helperFunctions.generateElement('div', "carousel_nav"),
+      carousel_note = helperFunctions.generateElement('span',"carousel_note","","Click/Tap to enlarge")
     ){
       
       imgArray.forEach(img => {
         let slide = this.carousel_singleSlide(img, counter);
         slideHolder.appendChild(slide);
-        let slideBtn = helperFunctions.generateElement('div',`${counter}`,"slideBtn","<i class='fa-solid fa-circle'></i>") 
-        carousel_nav.appendChild(slideBtn);
+        carousel_nav = this.carousel_navBtns(carousel_nav, counter);
         counter++;
         
       });
   
-      // carousel_tag.appendChild(slideHolder);
-      carousel_tag = helperFunctions.appendChildren(carousel_tag, slideHolder,this.carousel_slideControls())
-      let carousel = [carousel_tag,carousel_nav];
+      carousel_tag = helperFunctions.appendChildren(carousel_tag, slideHolder,slideControls)
+      let carousel = [carousel_tag,carousel_nav, carousel_note];
       return carousel;
   
+    },
+    carousel_navBtns: function(
+      navBtns,
+      counter,
+      slideBtn = helperFunctions.generateElement('button',`${counter}`,"slideBtn","<i class='fa-solid fa-circle'></i>") 
+    ){
+      navBtns.appendChild(slideBtn);
+      return navBtns;
     },
     carousel_slideControls: function(
       slideControls = helperFunctions.generateElement('div',"slideControls"),
@@ -70,13 +78,22 @@ const pageStuff = {
         this.theEvents(carousel, slideHolder,nextBtn,prevBtn,slideWidth,slideNav_array)
 
       },
-      getSlides: function(){return document.querySelectorAll('.slide')},
-      startSlides: function(slideHolder, slideWidth){
-        this.intervalFunction = setInterval(()=>{
-          this.moveToNextSlide(slideHolder,slideWidth);
-        }, this.interval);
-        return;
+      assignCurrentSlide: function(
+        centerSlide, formerslide, slideArray
+      ){
+        let target;
+        document.querySelector(".currentBtn").classList.remove('currentBtn');
+        formerslide.classList.remove('currentSlide');
+        
+        if (centerSlide.id == "firstClone"){slideArray[1].classList.add('currentSlide')}
+        else if (centerSlide.id == "lastClone"){slideArray[slideArray.length - 2].classList.add('currentSlide')}
+        else { centerSlide.classList.add('currentSlide')};
+
+        target = document.querySelector('.currentSlide').id;
+        document.getElementById(target.substring(5,6)).classList.add('currentBtn');
+        
       },
+      getSlides: function(){return document.querySelectorAll('.slide')},   
       moveToNextSlide: function(slideHolder, slideWidth){
         let slideArray = this.getSlides();
         if (this.index >= (slideArray.length-1)){return};
@@ -96,20 +113,26 @@ const pageStuff = {
         slideHolder.style.transform = `translate(${-slideWidth*this.index}px)`;
         slideHolder.style.transition = '0.75s';
       },
-      assignCurrentSlide: function(
-        centerSlide, formerslide, slideArray
+      previewCurrentSlide: function(
+        imgPath,
+        main = document.querySelector('main'),
+        section = helperFunctions.generateElement('section',"preview"),
+        figure = helperFunctions.generateElement('figure'),
+        img = helperFunctions.generateElement('img',"","","",imgPath),
+        note = helperFunctions.generateElement('span',"","","Click/Tap anywhere to close")
       ){
-        let target;
-        document.querySelector(".currentBtn").classList.remove('currentBtn');
-        formerslide.classList.remove('currentSlide');
-        
-        if (centerSlide.id == "firstClone"){slideArray[1].classList.add('currentSlide')}
-        else if (centerSlide.id == "lastClone"){slideArray[slideArray.length - 2].classList.add('currentSlide')}
-        else { centerSlide.classList.add('currentSlide')};
-
-        target = document.querySelector('.currentSlide').id;
-        document.getElementById(target.substring(5,6)).classList.add('currentBtn');
-        
+        main = helperFunctions.nestChildren(main, section,figure,img);
+        section.appendChild(note);
+        section.addEventListener('click',()=>{
+          section.remove();
+        })
+        console.log(imgPath);
+      },
+      startSlides: function(slideHolder, slideWidth){
+        this.intervalFunction = setInterval(()=>{
+          this.moveToNextSlide(slideHolder,slideWidth);
+        }, this.interval);
+        return;
       },
       theEvents : function(carousel, slideHolder,nextBtn,prevBtn, slideWidth, slideNav_array){
         slideHolder.addEventListener('transitionend',()=>{
@@ -125,11 +148,18 @@ const pageStuff = {
             this.index = slideArray.length - 2;
             slideHolder.style.transform = `translateX(${-slideWidth * this.index}px`;
           }
+        });
+        slideHolder,addEventListener('click',(e)=>{
+          if (e.target.id == "slideControls"){
+            let currentSlide = document.querySelector('.currentSlide');
+            let currentImg = currentSlide.children[0].src;
+            this.previewCurrentSlide(currentImg);
+          }
         })
         carousel.addEventListener('mouseenter',()=>{
           
           clearInterval(this.intervalFunction);
-        })
+        });
         carousel.addEventListener('mouseleave', ()=>{
           this.startSlides(slideHolder,slideWidth)
         });
@@ -172,16 +202,6 @@ const pageStuff = {
     }
     return prevObj;
   },
-  description: function(
-    
-  ){
-    
-
-  },
-  
-
-  
-
   main: function(
     main_tag = helperFunctions.generateElement('main'),
     prevObj = this.getPreviewObject()
@@ -193,15 +213,15 @@ const pageStuff = {
 
   side1: function(
     prevObj,
-    side1_tag = helperFunctions.generateElement('div',"side1"),
+    side1_tag = helperFunctions.generateElement('section',"side1"),
     carousel_organism = this.carousel.carousel_organism(prevObj)
     ){
-    side1_tag = helperFunctions.appendChildren(side1_tag, carousel_organism[0], carousel_organism[1])
+    side1_tag = helperFunctions.appendChildren(side1_tag, carousel_organism[0], carousel_organism[1], carousel_organism[2])
     return side1_tag;
   },
   side2(
     prevObj,
-    side2_tag = helperFunctions.generateElement('div',"side2"),
+    side2_tag = helperFunctions.generateElement('section',"side2"),
     info_tag = helperFunctions.generateElement('div',"infoTag"),
     name = helperFunctions.generateElement('h1',"","", `${helperFunctions.removeBRelement(prevObj.name)}`),
     year = helperFunctions.generateElement('span',"","",prevObj.preview.year),

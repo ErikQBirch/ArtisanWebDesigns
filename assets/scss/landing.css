@@ -92,6 +92,9 @@
   main #gallery a:active div {
     top: 0;
   }
+  main #gallery a:focus {
+    border: 5px solid rgb(0, 75, 255);
+  }
   main #gallery a.About {
     display: none;
   }
