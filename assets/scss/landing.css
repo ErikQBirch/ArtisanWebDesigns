@@ -118,6 +118,30 @@
   main #gallery a:nth-child(4n+4) {
     grid-column: 2/span 2;
   }
+  main #seeMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    flex-direction: column;
+  }
+  main #seeMore button {
+    color: white;
+    background-color: rgb(25, 25, 25);
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  main #seeMore button:hover,
+  main #seeMore button:active,
+  main #seeMore button:focus {
+    background-color: rgb(0, 75, 255);
+  }
+  main #seeMore div input {
+    text-align: center;
+  }
 }
 @media only all and (min-width: 760px) {
   main #hero figure {

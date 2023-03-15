@@ -190,15 +190,33 @@ const pageStuff = {
     
     this.carousel.functionality.setUp();
   },
+  getNewID_string: function(newID_string){
+    switch(newID_string.length){
+      case 1:
+        newID_string = `00${newID_string}`;
+        break;
+      case 2:
+        newID_string = `0${newID_string}`;
+        break;
+      case 3:
+        newID_string = `${newID_string}`
+        break;
+      default:
+        newID_string = `00${newID_string}`;
+        break; 
+    }
+    return newID_string;
+  },
   getNextProject: function(
     ID,
     newID = parseFloat(ID)+1,
-    max = Object.keys(allProjects_DB).length
+    max = Object.keys(allProjects_DB).length,
+    action = "Next"
   ){
     if (newID > max){
       newID == 1;
     };
-    return this.getProjectPath(newID.toString());
+    return this.getProjectPath(newID.toString(), action);
   },
   getPreviewObject: function(
     url = window.location.href,
@@ -215,42 +233,40 @@ const pageStuff = {
   },
   getPreviousProject: function(
     ID,
-    newID = parseFloat(ID)-1
+    newID = parseFloat(ID)-1,
+    action = "Previous"
     ){
     if (newID < 1){
       newID = Object.keys(allProjects_DB).length;
     }
-    return this.getProjectPath(newID.toString())
+    return this.getProjectPath(newID.toString(), action)
   },
   getProjectPath: function(
     newID_string,
+    action,
     projectTitle = "",
     newPath = "",
   ){
-    console.log(newID_string.length)
-    switch(newID_string.length){
-      case 1:
-        newID_string = `00${newID_string}`;
-        break;
-      case 2:
-        newID_string = `0${newID_string}`;
-        break;
-      case 3:
-        newID_string = `${newID_string}`
-        break;
-      default:
-        newID_string = `00${newID_string}`;
-        break; 
-    }
- 
+    newID_string = this.getNewID_string(newID_string);
+    
     projectTitle = `project${newID_string}`;
+    if (allProjects_DB[projectTitle].name == "About"){
+      if(action == "Previous"){
+        newID_string = (parseFloat(newID_string)-1).toString()
+        newID_string = this.getNewID_string(newID_string);
+      }
+      else if (action == "Next"){
+        newID_string = (parseFloat(newID_string)+1).toString()
+        newID_string = this.getNewID_string(newID_string);
+      }
+    }
+    projectTitle = `project${newID_string}`;
+    newPath  = `../pages/preview.html?id=${newID_string}`;
+
     if (allProjects_DB[projectTitle].name == "Empty Slot"){
-      newPath  = "../pages/deadEnd.html"
-    }
-    else {
-      newPath  = `../pages/preview.html?id=${newID_string}`
-    }
-    let newLink = helperFunctions.generateElement('a',"","","Previous<br>Project",newPath);
+      newPath  = "../pages/deadEnd.html";
+    } 
+    let newLink = helperFunctions.generateElement('a',"","",`${action}<br>Project`,newPath);
     return newLink;
   },
   main: function(
@@ -277,9 +293,6 @@ const pageStuff = {
     name = helperFunctions.generateElement('h1',"","", `${helperFunctions.removeBRelement(prevObj.name)}`),
     year = helperFunctions.generateElement('span',"","",prevObj.preview.year),
     descript = helperFunctions.generateElement('p',"","",prevObj.preview.description),
-    // btnHolder = helperFunctions.generateElement('div',"btnHolder"),
-    // siteBtn = helperFunctions.generateElement('a',"","","View Site",`${prevObj.preview.sitePath}`),
-    // returnBtn = helperFunctions.generateElement('a',"","","Return","../")
     btnHolder = this.side2_btnHolder(prevObj)
   ){
     
@@ -292,13 +305,14 @@ const pageStuff = {
   side2_btnHolder: function(
     prevObj,
     ID = prevObj.id,
+    socialBtn = helperFunctions.generateElement('a',"","","About Client",`${prevObj.preview.socialPath}`),
     siteBtn = helperFunctions.generateElement('a',"","","View Site",`${prevObj.preview.sitePath}`),
     returnBtn = helperFunctions.generateElement('a',"","","Return","../"),
     previousProject = this.getPreviousProject(ID),
     nextProject = this.getNextProject(ID),
     btnHolder = helperFunctions.generateElement('div',"btnHolder"),
   ){
-    btnHolder = helperFunctions.appendChildren(btnHolder, previousProject, siteBtn, returnBtn, nextProject);
+    btnHolder = helperFunctions.appendChildren(btnHolder, previousProject, socialBtn, siteBtn, returnBtn, nextProject);
     // PreviousProject = helperFunctions.generateElement('a',"","","Previous<br>Project",`pages/preview.html?id=${001}`)
     console.log(ID.length)
     console.log(parseFloat(ID));

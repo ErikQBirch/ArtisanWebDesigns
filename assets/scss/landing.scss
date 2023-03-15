@@ -104,6 +104,32 @@ $desktopBannerImg: url("");
         grid-column:2/ span 2;
       }
     }
+    #seeMore{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem auto;
+      flex-direction: column;
+      button{
+        color: white;
+        background-color:rgb(25,25,25);
+        border:none;
+        font-size: 1.5rem;
+        padding: 1rem;
+        border-radius: 5px;
+        cursor:pointer;
+      }
+      button:hover,
+      button:active,
+      button:focus{
+        background-color: rgb(0,75,255);
+      }
+      div{
+        input{
+          text-align:center;
+        }
+      }
+    }
   }
 }
 @media only all and (min-width: 760px) {
