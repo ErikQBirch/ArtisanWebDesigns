@@ -31,6 +31,7 @@
     line-height: 1.5rem;
     bottom: 0vh;
     z-index: 0;
+    padding: 0 2.5rem;
   }
   main h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
