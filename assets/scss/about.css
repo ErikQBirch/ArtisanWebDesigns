@@ -36,7 +36,7 @@
   }
   main h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
+    font-weight: inherit;
     text-align: center;
     text-decoration: underline;
   }
