@@ -122,22 +122,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem auto;
     flex-direction: column;
   }
   main #seeMore button {
     color: white;
     background-color: rgb(25, 25, 25);
     border: none;
-    font-size: 1.5rem;
-    padding: 1rem;
-    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.25s;
     cursor: pointer;
   }
   main #seeMore button:hover,
   main #seeMore button:active,
   main #seeMore button:focus {
     background-color: rgb(0, 75, 255);
+  }
+  main #seeMore #moreBtn {
+    width: 100%;
+  }
+  main #seeMore div {
+    margin-top: 1rem;
   }
   main #seeMore div input {
     text-align: center;

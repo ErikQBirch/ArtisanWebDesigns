@@ -29,7 +29,7 @@
     justify-content: center;
     text-align: center;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
     bottom: 0vh;
     z-index: 0;
   }
@@ -61,7 +61,7 @@
     height: fit-content;
     font-size: 5rem;
     text-decoration: none;
-    transition: color 0.75s;
+    transition: color 0.25s;
   }
   main div#contentHolder a:link i,
   main div#contentHolder a:visited i {
@@ -69,7 +69,7 @@
   }
   main div#contentHolder a:hover,
   main div#contentHolder a:active {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 75, 255);
   }
 }
 @media only all and (min-width: 760px) {

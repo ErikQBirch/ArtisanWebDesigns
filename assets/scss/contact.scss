@@ -30,7 +30,7 @@
         height:fit-content;
         font-size: 5rem;
         text-decoration: none;
-        transition: color 0.75s;
+        transition: color 0.25s;
         i{
           font-size: 5rem;
           // height:100%;
@@ -39,7 +39,7 @@
       }
       a:hover,
       a:active{
-        color: rgba(0,0,0,0.5);
+        color: rgb(0,75,255);
       }
     }
   }
