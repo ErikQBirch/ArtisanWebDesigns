@@ -69,7 +69,7 @@ const pageStuff = {
     form = helperFunctions.generateElement('div'),
     input = helperFunctions.generateElement('input',"","text"),
     goBtn = helperFunctions.generateElement('button',"","","GO!"),
-    failedMsg = helperFunctions.generateElement('span',"","","Incorrect! Try Again!")
+    failedMsg = helperFunctions.generateElement('span',"","",`Click "GO" button to check input`)
   ){
     form = helperFunctions.appendChildren(form, input,goBtn);
     section = helperFunctions.appendChildren(section, moreBtn, form, failedMsg);
@@ -100,6 +100,7 @@ const pageStuff = {
     console.log(moreSection)
     moreSection.children[0].addEventListener('click',()=>{
       moreSection.children[1].style.display = "flex";
+      moreSection.children[2].style.display = "flex";
       moreSection.children[0].remove();
     })
     moreDiv.children[1].addEventListener('click', ()=>{
@@ -111,7 +112,7 @@ const pageStuff = {
         console.log("WRONG")
         moreDiv.children[0].value = "";
         console.log(moreSection.children[1])
-        moreSection.children[1].style.display = "flex";
+        moreSection.children[1].innerHTML = `Failed Attempt! Try Again!`
       }
     })
   }
