@@ -216,9 +216,11 @@ const pageStuff = {
     side1_tag = helperFunctions.generateElement('section',"side1"),
     figure = helperFunctions.generateElement('a',"","","","../assets/resources/ErikQ.Birch_standardResume.pdf"),
     resume_webp = helperFunctions.generateElement('img',"","","Resume","../assets/resources/imgs/resume.webp"),
+    note = helperFunctions.generateElement('strong','','',"(NOTE: Click/Tap resume to download)")
   ){
     figure = helperFunctions.addHoverTitle(figure, "Click to download");
     side1_tag = helperFunctions.nestChildren(side1_tag, figure, resume_webp);
+    side1_tag.appendChild(note);
     return side1_tag;
   },
   side2: function(

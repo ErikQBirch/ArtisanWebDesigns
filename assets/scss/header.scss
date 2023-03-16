@@ -165,8 +165,10 @@
       nav#sideNav{
         top:0vh;
         ul{
-          li:hover{
+          li:hover,
+          li:focus{
             background-color: rgb(0,75,255);
+            // font-style: italic;
           }
         }
       }
@@ -314,6 +316,11 @@
         color: rgba(25,25,25,1);
         text-shadow: 0 0 5px white;
         font-size: 1.25rem;
+        // transition: color 0.5s;
+        &:hover{
+          color: rgb(0,75,255);
+          font-style:italic;
+        }
       }
     }
   }

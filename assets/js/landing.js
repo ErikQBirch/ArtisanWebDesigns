@@ -53,11 +53,14 @@ const pageStuff = {
 
   main: function(
     main_tag = helperFunctions.generateElement('main'),
+    text_div = helperFunctions.generateElement('div',"textDiv"),
     h1_tag = helperFunctions.generateElement('h1',"","","Portfolio"),
+    span_tag = helperFunctions.generateElement('span',"","","Click on a project to view details"),
     hero_tag = this.hero(),
     gallery_tag = this.gallery(),
     moreSection = this.moreSection()){
-      main_tag = helperFunctions.appendChildren(main_tag, hero_tag, h1_tag, gallery_tag, moreSection)
+      text_div = helperFunctions.appendChildren(text_div, h1_tag, span_tag);
+      main_tag = helperFunctions.appendChildren(main_tag, hero_tag, text_div, gallery_tag, moreSection)
     return main_tag;
   },
   moreSection: function(
