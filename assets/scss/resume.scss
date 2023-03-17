@@ -73,6 +73,7 @@
             border:none;          
             border-radius: 5px;
             cursor:pointer;
+            transition: background-color 0.5s;
             &:hover,&:active,&:focus{
               background-color: rgba(0,75,255,0.5);
             }

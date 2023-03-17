@@ -70,6 +70,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.5s;
   }
   main #side2 #carousel #slideControls button:hover, main #side2 #carousel #slideControls button:active, main #side2 #carousel #slideControls button:focus {
     background-color: rgba(0, 75, 255, 0.5);
