@@ -8,7 +8,8 @@ const pageStuff = {
     "assets/resources/imgs/previewPics/InterviewQuestions/IQ3.webp",
     "assets/resources/imgs/previewPics/InterviewQuestions/IQ4.webp",
     "assets/resources/imgs/previewPics/InterviewQuestions/IQ5.webp",
-    "assets/resources/imgs/previewPics/InterviewQuestions/IQ6.webp"
+    "assets/resources/imgs/previewPics/InterviewQuestions/IQ6.webp",
+    "assets/resources/imgs/previewPics/InterviewQuestions/IQ7.webp"
   ],
   carousel: {
     carousel_organism: function(

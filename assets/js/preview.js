@@ -55,37 +55,8 @@ const pageStuff = {
       index: 1,
       intervalFunction: 0,
       interval: 5000,
-      // touchstartX : 0,
-      // touchendX : 0,
-      // checkDirection: function() {
-      //   if (functionality.touchendX < functionality.touchstartX) alert('swiped left!')
-      //   if (functionality.touchendX > functionality.touchstartX) alert('swiped right!')
-      // },
-
-
-      setUp: function(
-        carousel = document.getElementById('carousel'),
-        slideHolder = document.getElementById('slideHolder'),
-        prevBtn = document.getElementById('prevBtn'),
-        nextBtn = document.getElementById('nextBtn'),
-        slideArray = this.getSlides(),
-        firstClone = slideArray[0].cloneNode(true),
-        lastClone = slideArray[slideArray.length-1].cloneNode(true),
-        slideWidth = slideArray[this.index].clientWidth,
-        slideNav_array = document.querySelectorAll('.slideBtn')
-      ){
-        firstClone.id = "firstClone";
-        lastClone.id = "lastClone";
-        slideHolder.append(firstClone);
-        slideHolder.prepend(lastClone);
-        slideArray[0].classList.add('currentSlide');
-        slideNav_array[0].classList.add('currentBtn');
-        slideHolder.style.transform = `translateX(${-slideWidth * this.index}px)`;
-        
-        this.startSlides(slideHolder, slideWidth);
-        this.theEvents(carousel, slideHolder,nextBtn,prevBtn,slideWidth,slideNav_array)
-
-      },
+      touchstartX : 0, // SWIPE SCREEN
+      touchendX : 0,
       assignCurrentSlide: function(
         centerSlide, formerslide, slideArray
       ){
@@ -100,6 +71,16 @@ const pageStuff = {
         target = document.querySelector('.currentSlide').id;
         document.getElementById(target.substring(5,6)).classList.add('currentBtn');
         
+      },
+      checkDirection: function(slideHolder, slideWidth) {
+        clearInterval(this.intervalFunction);
+        if (this.touchendX < this.touchstartX) {
+          this.moveToNextSlide(slideHolder,slideWidth);
+        }
+        if (this.touchendX > this.touchstartX) {
+          this.moveToPrevSlide(slideHolder,slideWidth);
+        }
+        this.startSlides(slideHolder,slideWidth);
       },
       getSlides: function(){return document.querySelectorAll('.slide')},   
       moveToNextSlide: function(slideHolder, slideWidth){
@@ -134,7 +115,29 @@ const pageStuff = {
         section.addEventListener('click',()=>{
           section.remove();
         })
-        console.log(imgPath);
+      },
+      setUp: function(
+        carousel = document.getElementById('carousel'),
+        slideHolder = document.getElementById('slideHolder'),
+        prevBtn = document.getElementById('prevBtn'),
+        nextBtn = document.getElementById('nextBtn'),
+        slideArray = this.getSlides(),
+        firstClone = slideArray[0].cloneNode(true),
+        lastClone = slideArray[slideArray.length-1].cloneNode(true),
+        slideWidth = slideArray[this.index].clientWidth,
+        slideNav_array = document.querySelectorAll('.slideBtn')
+      ){
+        firstClone.id = "firstClone";
+        lastClone.id = "lastClone";
+        slideHolder.append(firstClone);
+        slideHolder.prepend(lastClone);
+        slideArray[0].classList.add('currentSlide');
+        slideNav_array[0].classList.add('currentBtn');
+        slideHolder.style.transform = `translateX(${-slideWidth * this.index}px)`;
+        
+        this.startSlides(slideHolder, slideWidth);
+        this.theEvents(carousel, slideHolder,nextBtn,prevBtn,slideWidth,slideNav_array)
+
       },
       startSlides: function(slideHolder, slideWidth){
         this.intervalFunction = setInterval(()=>{
@@ -143,6 +146,26 @@ const pageStuff = {
         return;
       },
       theEvents : function(carousel, slideHolder,nextBtn,prevBtn, slideWidth, slideNav_array){
+        carousel.addEventListener('mouseenter',()=>{
+          
+          clearInterval(this.intervalFunction);
+        });
+        carousel.addEventListener('mouseleave', ()=>{
+          this.startSlides(slideHolder,slideWidth);
+        });
+        document.addEventListener('touchstart', (e) => { // SWIPE SCREEN
+          this.touchstartX = e.changedTouches[0].screenX;
+        });
+        document.addEventListener('touchend', (// SWIPE SCREEN
+          e, 
+          slideHolder = document.querySelector('#slideHolder'), 
+          slideWidth = this.getSlides()[this.index].clientWidth,
+          ) => { 
+          this.touchendX = e.changedTouches[0].screenX
+          this.checkDirection(slideHolder, slideWidth);
+        });
+        nextBtn.addEventListener('click',()=>{this.moveToNextSlide(slideHolder, slideWidth)});
+        prevBtn.addEventListener('click',()=>{this.moveToPrevSlide(slideHolder, slideWidth)});
         slideHolder.addEventListener('transitionend',()=>{
           let slideArray = this.getSlides();
           
@@ -157,38 +180,15 @@ const pageStuff = {
             slideHolder.style.transform = `translateX(${-slideWidth * this.index}px`;
           }
         });
-        slideHolder,addEventListener('click',(e)=>{
+        slideHolder.addEventListener('click',(e)=>{
           if (e.target.id == "slideControls"){
             let currentSlide = document.querySelector('.currentSlide');
             let currentImg = currentSlide.children[0].src;
             this.previewCurrentSlide(currentImg);
           }
         })
-
-        // slideHolder.addEventListener('touchstart', e => {
-        //   functionality.touchstartX = e.changedTouches[0].screenX;
-        //   document.querySelector('main').style.backgroundColor = "blue";
-        // })
-        
-        // slideHolder.addEventListener('touchend', e => {
-        //   functionality.touchendX = e.changedTouches[0].screenX
-        //   functionality.checkDirection();
-        //   document.querySelector('main').style.backgroundColor = "red";
-        // })
-
-        carousel.addEventListener('mouseenter',()=>{
-          
-          clearInterval(this.intervalFunction);
-        });
-        carousel.addEventListener('mouseleave', ()=>{
-          this.startSlides(slideHolder,slideWidth)
-        });
-        nextBtn.addEventListener('click',()=>{this.moveToNextSlide(slideHolder, slideWidth)});
-        prevBtn.addEventListener('click',()=>{this.moveToPrevSlide(slideHolder, slideWidth)});
         for (let slideBtn of slideNav_array){
-          // console.log(slideBtn);
           slideBtn.addEventListener('click',()=>{
-            console.log("HELLOW")
             let slideArray = this.getSlides();
             this.index = parseFloat(slideBtn.id) + 1;
             this.assignCurrentSlide(slideArray[this.index], document.querySelector('.currentSlide'),slideArray)
@@ -241,7 +241,6 @@ const pageStuff = {
     url = window.location.href,
     id = url.slice(url.length-3, url.length)
   ){
-    // console.log(id)
     let prevObj;
     for (let x in allProjects_DB){
       if (allProjects_DB[x].id == id){
@@ -333,8 +332,6 @@ const pageStuff = {
   ){
     btnHolder = helperFunctions.appendChildren(btnHolder, previousProject, socialBtn, siteBtn, returnBtn, nextProject);
     // PreviousProject = helperFunctions.generateElement('a',"","","Previous<br>Project",`pages/preview.html?id=${001}`)
-    console.log(ID.length)
-    console.log(parseFloat(ID));
     return btnHolder;
 
   }
