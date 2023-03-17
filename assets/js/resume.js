@@ -44,7 +44,7 @@ const pageStuff = {
     resume_webp = helperFunctions.generateElement('img',"","","Resume","../assets/resources/imgs/resume.webp"),
     note = helperFunctions.generateElement('strong','','',"(NOTE: Click/Tap resume to download)")
   ){
-    figure = helperFunctions.addHoverTitle(figure, "Click to download");
+    figure = helperFunctions.addHoverTitle(figure, "Click/Tap to download");
     side1_tag = helperFunctions.nestChildren(side1_tag, figure, resume_webp);
     side1_tag.appendChild(note);
     return side1_tag;

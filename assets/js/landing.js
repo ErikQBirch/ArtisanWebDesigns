@@ -56,7 +56,7 @@ const pageStuff = {
     main_tag = helperFunctions.generateElement('main'),
     text_div = helperFunctions.generateElement('div',"textDiv"),
     h1_tag = helperFunctions.generateElement('h1',"","","Portfolio"),
-    span_tag = helperFunctions.generateElement('span',"","","Click on a project to view details"),
+    span_tag = helperFunctions.generateElement('span',"","","Click/Tap on a project to view details"),
     hero_tag = this.hero(),
     gallery_tag = this.gallery(),
     moreSection = this.moreSection()){
@@ -70,7 +70,7 @@ const pageStuff = {
     form = helperFunctions.generateElement('div'),
     input = helperFunctions.generateElement('input',"","text"),
     goBtn = helperFunctions.generateElement('button',"","","GO!"),
-    failedMsg = helperFunctions.generateElement('span',"","",`Click "GO" button to check input`)
+    failedMsg = helperFunctions.generateElement('span',"","",`Click/Tap "GO" button to check input`)
   ){
     form = helperFunctions.appendChildren(form, input,goBtn);
     section = helperFunctions.appendChildren(section, moreBtn, form, failedMsg);

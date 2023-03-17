@@ -13,7 +13,7 @@ const pageStuff = {
     img_tag = helperFunctions.generateElement('img',"","","","../assets/resources/imgs/background.webp"),
     banner_tag = helperFunctions.generateElement('div', "banner", "",""),
     h1 = helperFunctions.generateElement('h1',"","","This is a dead end."),
-    h2 = helperFunctions.generateElement('h2',"","","Click anywhere to go back or navigate to a different part of the portfolio")
+    h2 = helperFunctions.generateElement('h2',"","","Click/Tap anywhere to go back or navigate to a different part of the portfolio")
   ){
     banner_tag = helperFunctions.appendChildren(banner_tag, h1, h2);
     figure_tag.appendChild(img_tag);

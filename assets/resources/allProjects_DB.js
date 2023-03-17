@@ -38,7 +38,9 @@ export const allProjects_DB = {
       "socialPath":"https://www.facebook.com/search/top?q=difference%20auto%20detailing",
       "year":2022,
       "carouselImgs" :["assets/resources/imgs/previewPics/DifferenceAutoDetailing/Diff1.webp","assets/resources/imgs/previewPics/DifferenceAutoDetailing/Diff2.webp","assets/resources/imgs/previewPics/DifferenceAutoDetailing/Diff3.webp","assets/resources/imgs/previewPics/DifferenceAutoDetailing/Diff4.webp","assets/resources/imgs/previewPics/DifferenceAutoDetailing/Diff5.webp"],
-      "description" : "This website was created for one of my college roommates and was used as my final project for my Bachelor's degree from BYU-Idaho."
+      "description" : 
+        `This website was created for one of my college roommates and was used as my final project for my Bachelor's degree from BYU-Idaho.<br><br>
+        Kyle Knowles was one of my first clients whom I've had active correspondence with trhoughtout the process of constructing his site.`
     }
   },
   "project004": {
