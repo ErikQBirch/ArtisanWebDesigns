@@ -44,7 +44,7 @@ const pageStuff = {
     hero_tag = helperFunctions.generateElement('div',"hero"),
     figure_tag = helperFunctions.generateElement('figure'),
     img_tag = helperFunctions.generateElement('img',"","","","assets/resources/imgs/background.webp"),
-    banner_tag = helperFunctions.generateElement('div', "banner","","I live in a world that balances between the intracate power of science and the inspiring wonder of art!<br>I am a web designer!")
+    banner_tag = helperFunctions.generateElement('div', "banner","","I live in a world that balances between the intracate power of science and the inspiring wonder of art!<br>I am a Web Designer!")
   ){
     figure_tag.appendChild(img_tag);
     hero_tag = helperFunctions.appendChildren(hero_tag, figure_tag, banner_tag)

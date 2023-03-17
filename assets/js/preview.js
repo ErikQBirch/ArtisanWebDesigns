@@ -55,6 +55,14 @@ const pageStuff = {
       index: 1,
       intervalFunction: 0,
       interval: 5000,
+      touchstartX : 0,
+      touchendX : 0,
+      checkDirection: function() {
+        if (functionality.touchendX < functionality.touchstartX) alert('swiped left!')
+        if (functionality.touchendX > functionality.touchstartX) alert('swiped right!')
+      },
+
+
       setUp: function(
         carousel = document.getElementById('carousel'),
         slideHolder = document.getElementById('slideHolder'),
@@ -156,6 +164,17 @@ const pageStuff = {
             this.previewCurrentSlide(currentImg);
           }
         })
+
+        slideHolder.addEventListener('touchstart', e => {
+          functionality.touchstartX = e.changedTouches[0].screenX
+        })
+        
+        slideHolder.addEventListener('touchend', e => {
+          functionality.touchendX = e.changedTouches[0].screenX
+          functionality.checkDirection();
+          document.querySelector('main').style.backgroundColor = "red";
+        })
+
         carousel.addEventListener('mouseenter',()=>{
           
           clearInterval(this.intervalFunction);
@@ -163,7 +182,6 @@ const pageStuff = {
         carousel.addEventListener('mouseleave', ()=>{
           this.startSlides(slideHolder,slideWidth)
         });
-        
         nextBtn.addEventListener('click',()=>{this.moveToNextSlide(slideHolder, slideWidth)});
         prevBtn.addEventListener('click',()=>{this.moveToPrevSlide(slideHolder, slideWidth)});
         for (let slideBtn of slideNav_array){

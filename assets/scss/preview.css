@@ -106,7 +106,8 @@
     text-align: center;
     border-radius: 5px;
     border: none;
-    margin: 0.5rem;
+    margin: 0.25rem;
+    font-size: 0.75rem;
   }
   main #preview {
     position: fixed;
@@ -132,6 +133,11 @@
 @media only all and (min-width: 760px) {
   main {
     margin-top: 0;
+  }
+  main #side2 #infoTag div button,
+  main #side2 #infoTag div a:link,
+  main #side2 #infoTag div a:visited {
+    font-size: 1rem;
   }
   main #preview figure {
     width: 80%;

@@ -109,7 +109,8 @@ main{
           text-align:center;
           border-radius: 5px;
           border:none;
-          margin: 0.5rem;
+          margin: 0.25rem;
+          font-size: 0.75rem;
         }
         button:hover,
         button:active,
@@ -143,6 +144,17 @@ main{
 @media only all and (min-width: 760px) {
   main{
     margin-top: 0;
+    #side2{
+      #infoTag{
+        div{
+          button,
+          a:link,
+          a:visited{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
     #preview{
       figure{
         width: 80%;
