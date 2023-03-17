@@ -37,15 +37,15 @@
   }
   main #side1 #carousel #slideControls button {
     color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 5rem;
     width: 3.5rem;
-    background-color: rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
-  main #side1 #carousel #slideControls button:hover,
-  main #side1 #carousel #slideControls button:active {
-    background-color: rgba(0, 0, 0, 0.5);
+  main #side1 #carousel #slideControls button:hover, main #side1 #carousel #slideControls button:active, main #side1 #carousel #slideControls button:focus {
+    background-color: rgba(0, 75, 255, 0.5);
   }
   main #side1 #carousel_nav {
     display: flex;
@@ -61,6 +61,9 @@
   }
   main #side1 #carousel_nav button.currentBtn {
     color: rgba(0, 0, 0, 0.5);
+  }
+  main #side1 #carousel_nav button:hover, main #side1 #carousel_nav button:active, main #side1 #carousel_nav button:focus {
+    color: rgb(0, 75, 255);
   }
   main #side1 #carousel_note {
     margin: 1rem auto;
@@ -92,7 +95,6 @@
     display: flex;
     justify-content: center;
   }
-  main #side2 #infoTag div button,
   main #side2 #infoTag div a:link,
   main #side2 #infoTag div a:visited {
     display: flex;
@@ -108,6 +110,13 @@
     border: none;
     margin: 0.25rem;
     font-size: 0.75rem;
+    transition: background-color 0.5s;
+  }
+  main #side2 #infoTag div a:link:hover, main #side2 #infoTag div a:link:active, main #side2 #infoTag div a:link:focus,
+  main #side2 #infoTag div a:visited:hover,
+  main #side2 #infoTag div a:visited:active,
+  main #side2 #infoTag div a:visited:focus {
+    background-color: rgb(0, 75, 255);
   }
   main #preview {
     position: fixed;

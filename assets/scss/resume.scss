@@ -67,15 +67,15 @@
           justify-content:space-between;
           button{
             color:rgba(255,255,255,0.75);
-            background-color: rgba(0,0,0,0.25);
+            background-color: rgba(0,0,0,0.5);
             font-size: 5rem;
             width: 3.5rem;
-            border:none;     
-            border-radius: 5px;     
-          }
-          button:hover,
-          button:active{
-            background-color: rgba(0,0,0,0.5);
+            border:none;          
+            border-radius: 5px;
+            cursor:pointer;
+            &:hover,&:active,&:focus{
+              background-color: rgba(0,75,255,0.5);
+            }
           }
         }
       } 
@@ -92,6 +92,11 @@
         }
         button.currentBtn{
           color: rgba(0,0,0,0.5);
+        }
+        button{
+          &:hover,&:active,&:focus{
+            color:rgb(0,75,255);
+          }
         }
       }
       #carousel_note {

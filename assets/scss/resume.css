@@ -64,15 +64,15 @@
   }
   main #side2 #carousel #slideControls button {
     color: rgba(255, 255, 255, 0.75);
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 5rem;
     width: 3.5rem;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
-  main #side2 #carousel #slideControls button:hover,
-  main #side2 #carousel #slideControls button:active {
-    background-color: rgba(0, 0, 0, 0.5);
+  main #side2 #carousel #slideControls button:hover, main #side2 #carousel #slideControls button:active, main #side2 #carousel #slideControls button:focus {
+    background-color: rgba(0, 75, 255, 0.5);
   }
   main #side2 #carousel_nav {
     display: flex;
@@ -88,6 +88,9 @@
   }
   main #side2 #carousel_nav button.currentBtn {
     color: rgba(0, 0, 0, 0.5);
+  }
+  main #side2 #carousel_nav button:hover, main #side2 #carousel_nav button:active, main #side2 #carousel_nav button:focus {
+    color: rgb(0, 75, 255);
   }
   main #side2 #carousel_note {
     margin: 1rem auto;
