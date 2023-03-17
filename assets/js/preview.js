@@ -166,7 +166,8 @@ const pageStuff = {
         })
 
         slideHolder.addEventListener('touchstart', e => {
-          functionality.touchstartX = e.changedTouches[0].screenX
+          functionality.touchstartX = e.changedTouches[0].screenX;
+          document.querySelector('main').style.backgroundColor = "blue";
         })
         
         slideHolder.addEventListener('touchend', e => {
@@ -340,3 +341,4 @@ const pageStuff = {
 }
 
 pageStuff.constructHTML();
+document.querySelector('main').style.backgroundColor = "yellow";
