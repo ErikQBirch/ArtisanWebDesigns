@@ -55,12 +55,12 @@ const pageStuff = {
       index: 1,
       intervalFunction: 0,
       interval: 5000,
-      touchstartX : 0,
-      touchendX : 0,
-      checkDirection: function() {
-        if (functionality.touchendX < functionality.touchstartX) alert('swiped left!')
-        if (functionality.touchendX > functionality.touchstartX) alert('swiped right!')
-      },
+      // touchstartX : 0,
+      // touchendX : 0,
+      // checkDirection: function() {
+      //   if (functionality.touchendX < functionality.touchstartX) alert('swiped left!')
+      //   if (functionality.touchendX > functionality.touchstartX) alert('swiped right!')
+      // },
 
 
       setUp: function(
@@ -165,16 +165,16 @@ const pageStuff = {
           }
         })
 
-        slideHolder.addEventListener('touchstart', e => {
-          functionality.touchstartX = e.changedTouches[0].screenX;
-          document.querySelector('main').style.backgroundColor = "blue";
-        })
+        // slideHolder.addEventListener('touchstart', e => {
+        //   functionality.touchstartX = e.changedTouches[0].screenX;
+        //   document.querySelector('main').style.backgroundColor = "blue";
+        // })
         
-        slideHolder.addEventListener('touchend', e => {
-          functionality.touchendX = e.changedTouches[0].screenX
-          functionality.checkDirection();
-          document.querySelector('main').style.backgroundColor = "red";
-        })
+        // slideHolder.addEventListener('touchend', e => {
+        //   functionality.touchendX = e.changedTouches[0].screenX
+        //   functionality.checkDirection();
+        //   document.querySelector('main').style.backgroundColor = "red";
+        // })
 
         carousel.addEventListener('mouseenter',()=>{
           
@@ -341,4 +341,4 @@ const pageStuff = {
 }
 
 pageStuff.constructHTML();
-document.querySelector('main').style.backgroundColor = "yellow";
+// document.querySelector('main').style.backgroundColor = "yellow";
