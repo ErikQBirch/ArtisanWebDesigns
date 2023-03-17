@@ -44,7 +44,7 @@ main{
           width: 3.5rem;
           border:none;          
           border-radius: 5px;
-          transition: background-color 0.5s;
+          transition: background-color 0.25s;
           cursor:pointer;
           &:hover,&:active,&:focus{
             background-color: rgba(0,75,255,0.5);
@@ -61,6 +61,7 @@ main{
         margin: 0 0.25rem;
         border:none;
         background-color: transparent;
+        transition: color 0.25s;
         cursor:pointer;
       }
       button.currentBtn{
