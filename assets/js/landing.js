@@ -1,4 +1,5 @@
 import { helperFunctions } from "./helperFunctions.js";
+import { specialFeatures } from "./specialFeatures.js";
 import { allProjects_DB } from "../resources/allProjects_DB.js";
 
 const pageStuff = {
@@ -7,7 +8,7 @@ const pageStuff = {
     footer = document.querySelector('footer')
   ){
     body.insertBefore(this.main(), footer);
-    helperFunctions.lazyLoading();
+    specialFeatures.lazyLoading();
     this.theEvents();
   },
   gallery: function(
@@ -38,7 +39,7 @@ const pageStuff = {
         }
     }
     main.appendChild(gallery_tag);
-    helperFunctions.lazyLoading();
+    specialFeatures.lazyLoading();
   },
   hero: function(
     hero_tag = helperFunctions.generateElement('div',"hero"),
