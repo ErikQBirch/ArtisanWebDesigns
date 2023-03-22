@@ -3,7 +3,7 @@ export const skillDB = {
     "id":1,
     "name": "Web Design",
     "imgPath": "../assets/resources/imgs/WebDesign.webp",
-    "descript":"By the end of the year 2022, I graduatetd from Brigham Young Univiersity of Idaho with a Bachelor's degree in the Science of Web Design and Development. While continuing to further my skills with various coding languages and frameworks, my expertise with HTML, CSS, and Javascript also continues to develop beyond mastery.<br><br>I have worked as a professional web designer while under employment for companies such as Sapien Designs Multi-Media. My experience doing free-lance projects for several clients is also a feat worth taking note of.<br><br>Regardless of who I'm working for, I excel in the field of Design; where I make my clients' content look good!"
+    "descript":"By the end of the year 2022, I graduatetd from Brigham Young Univiersity of Idaho with a Bachelor's degree in the Science of Web Design and Development. While continuing to further my skills with various coding languages and frameworks, my expertise with HTML, CSS, and Javascript also continues to develop beyond mastery. I also understand the vitality of good UI/UX design and compliance to WCAG.<br><br>I have worked as a professional web designer while under employment for companies such as Sapien Designs Multi-Media. My experience doing free-lance projects for several clients is also a feat worth taking note of.<br><br>Regardless of who I'm working for, I excel in the field of Design; where I make my clients' content look good!"
   },
   "skill_2": {
     "id":2,
