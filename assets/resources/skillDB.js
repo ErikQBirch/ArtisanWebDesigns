@@ -7,9 +7,9 @@ export const skillDB = {
   },
   "skill_2": {
     "id":2,
-    "name": "Copywriting",
+    "name": "Content Creation",
     "imgPath": "../assets/resources/imgs/CopyWriting.webp",
-    "descript":"From past experiences, I understand the vitality of creating effective content; content that snags the attention of potential viewers as well as search engines. Utilizing creative writing skills developed over the years in addition to experience with professionalisms; I can weave up copywritten content that is effective, informative, and captivating."
+    "descript":"From past experiences, I understand the vitality of creating effective content; content that snags the attention of potential viewers as well as search engines. Utilizing creative writing skills and graphic design abilities developed over the years in addition to experience with professionalisms; I can produce content that is effective, informative, and captivating enough to DRAW AUDIENCES TO YOUR WORKS."
   },
   "skill_3": {
     "id":3,

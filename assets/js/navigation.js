@@ -5,7 +5,7 @@ export const navigation = {
   pathAdjuster: [],
   currentPage:  "",
   extraNav_molecule: function(
-    extraNav = helperFunctions.generateElement('a',"extraNav","","Web Design | Copywriting | Social Media",`${this.pathAdjuster[1]}skills.html`)
+    extraNav = helperFunctions.generateElement('a',"extraNav","","Web Design | Content Creation | Social Media",`${this.pathAdjuster[1]}skills.html`)
   ){
     return extraNav;
   },

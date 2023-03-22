@@ -254,6 +254,7 @@
         justify-content: space-between;
         align-items:center;
         transition: all 0.75s;
+        // background-color:rgba(255,255,255,1);
         li{
           height: 100%;
           width: 100%;
@@ -306,20 +307,30 @@
   header{
     #logoArea{
       display:flex;
-      #extraNav{
-        display:flex;
-        height: 100%;
-        align-items: center;
-        margin-left: 1rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        text-decoration: none;
-        color: rgba(25,25,25,1);
-        text-shadow: 0 0 5px white;
-        font-size: 1.25rem;
-        // transition: color 0.5s;
-        &:hover{
-          color: rgb(0,75,255);
-          font-style:italic;
+      @media only all and (min-width: 1300px){
+        #extraNav{
+          display:flex;
+          height: 100%;
+          align-items: center;
+          margin-left: 1rem;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+          text-decoration: none;
+          color: rgba(25,25,25,1);
+          text-shadow: 0 0 5px white;
+          font-size: 1.25rem;
+          span{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            text-align:center;
+            // margin: 0 2.5rem 0 0;
+            padding: 0 0.5rem  0 0.5rem;
+          }
+          // transition: color 0.5s;
+          &:hover{
+            color: rgb(0,75,255);
+            font-style:italic;
+          }
         }
       }
     }

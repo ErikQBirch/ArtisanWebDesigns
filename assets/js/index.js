@@ -11,7 +11,7 @@ const pageStuff = {
     this.scrollEvents.headerScroll();
     this.favicon();
     helperFunctions.metaInfo({
-      "keywordList":"Portfolio, Web Design, Copywriting, Social Media",
+      "keywordList":"Portfolio, Web Design, Content Creation, Social Media",
       "description":"I am a web-designer and promoter of amazing, wholesome, and uplifting artwork of all kinds. I live in a world that balances between the intracate power of science and the inspiring wonder of art. As a web designer, I excel in creation and beautification when it comes to websites and always seek oportuanities to help others with my skills. Whether it's web designing in and of itself, content copywriting, or obtaining a pressence on social media; this is what I do and have been doing for many years."
     })
   },
