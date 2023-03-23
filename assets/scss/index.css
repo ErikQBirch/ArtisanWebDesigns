@@ -166,6 +166,8 @@
     padding-top: 0rem;
     min-height: 100vh;
     margin-bottom: 2.5rem;
+    filter: blur(0px);
+    transition: filter 0.75s;
   }
   footer {
     height: 10rem;
@@ -176,6 +178,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  body.blur main {
+    filter: blur(5px);
   }
 }
 @media only all and (min-width: 760px) {

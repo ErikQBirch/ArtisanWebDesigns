@@ -26,12 +26,12 @@ export const navigation = {
     menuBtn.appendChild(burger);
     return menuBtn;
   },
-  labelMainNav: function(
-    header = document.querySelector('header'),
-    mainNav = header.children[header.children.length - 1]
-  ){
-    mainNav.id = "mainNav";
-  },
+  // labelMainNav: function(
+  //   header = document.querySelector('header'),
+  //   mainNav = header.children[header.children.length - 1]
+  // ){
+  //   mainNav.id = "mainNav";
+  // },
   logo_molecule: function(
     div = helperFunctions.generateElement('div',"logoArea"),
     a_tag = helperFunctions.generateElement('a',"logoLink","","",`${this.pathAdjuster[0]}`),
@@ -43,7 +43,7 @@ export const navigation = {
   },
   nav_molecule:function(
     navOptions = ["Portfolio","Skills","About","Resume","Contact"],
-    nav_tag = helperFunctions.generateElement('nav'),
+    nav_tag = helperFunctions.generateElement('nav','mainNav'),
     ul_tag = helperFunctions.generateElement('ul'))
   {
     navOptions.forEach(opt => {
@@ -70,7 +70,7 @@ export const navigation = {
   },
   postConstructionFunctions: function(){
     this.sideNav_events();
-    this.labelMainNav();
+    // this.labelMainNav();
   },
   setGlobalVariables: function(){
     this.currentPage = helperFunctions.getCurrentPage(this.pageList);
@@ -87,20 +87,24 @@ export const navigation = {
     nav.id = "sideNav";
     return sideNav_tag;
   },
-  sideNav_events: function(){
-    const menuBtn = document.querySelector(".menu-btn");
-    const sideMenu = document.querySelector('#sideMenu');
-    const voidElement = document.querySelector('.void');
+  sideNav_events: function(
+    body_tag = document.querySelector('body'),
+    menuBtn = document.querySelector(".menu-btn"),
+    sideMenu = document.querySelector('#sideMenu'),
+    voidElement = document.querySelector('.void')
+  ){
     let menuOpen = false;
-    console.log(menuBtn)
+    // console.log(main_tag)
     menuBtn.addEventListener('click',() => {
       if (!menuOpen){
         sideMenu.classList.add('open');
-        menuBtn.classList.add('open')
+        menuBtn.classList.add('open');
+        body_tag.classList.add('blur'),
         menuOpen = true;
       } else {
         sideMenu.classList.remove('open');
-        menuBtn.classList.remove('open')
+        menuBtn.classList.remove('open');
+        body_tag.classList.remove('blur'),
         menuOpen = false;
       }
     })
