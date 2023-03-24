@@ -8,7 +8,7 @@ const pageStuff = {
       this.header(),
       this.footer());
     navigation.postConstructionFunctions();
-    this.scrollEvents.headerScroll();
+    this.theEvents.headerScroll();
     this.favicon();
     helperFunctions.metaInfo({
       "keywordList":"Portfolio, Web Design, Content Creation, Social Media",
@@ -57,7 +57,7 @@ const pageStuff = {
     footer_tag.appendChild(text);
     return footer_tag;
   },
-  scrollEvents:{
+  theEvents:{
     headerScroll: function(
       header_tag = document.querySelector('header'),
       sideMenu = document.querySelector('#sideMenu')

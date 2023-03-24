@@ -26,7 +26,7 @@ const pageStuff = {
   },
   links: function(
     contentHolder = helperFunctions.generateElement('div',"contentHolder"),
-    email = helperFunctions.generateElement('a',"email","email",'<i class="fa-solid fa-square-envelope"></i>',"erikqbirch@gmail.com"),
+    email = helperFunctions.generateElement('a',"email","email",'<i class="fa-solid fa-square-envelope"></i>',"mailto:erikqbirch@gmail.com"),
     linkedIn = helperFunctions.generateElement('a',"linkedIn","",'<i class="fa-brands fa-linkedin"></i>',"https://www.linkedin.com/in/erik-birch-96674618a/"),
     facebook = helperFunctions.generateElement('a',"facebook","",'<i class="fa-brands fa-square-facebook"></i>',"https://www.facebook.com/profile.php?id=100013516478893"),
     insta = helperFunctions.generateElement('a',"insta","",'<i class="fa-brands fa-square-instagram"></i>',"https://www.instagram.com/erikqbirch/")
