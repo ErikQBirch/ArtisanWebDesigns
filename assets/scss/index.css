@@ -173,13 +173,13 @@
     height: 10rem;
     width: 100%;
     background-color: rgb(25, 25, 25);
-    text-align: center;
     color: white;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  body.blur main {
+  body.blur main, body.blur footer {
     filter: blur(5px);
   }
 }
