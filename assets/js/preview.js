@@ -40,9 +40,13 @@ const pageStuff = {
     return this.getProjectPath(newID.toString(), action);
   },
   getPreviewObject: function(
-    url = window.location.href,
-    id = url.slice(url.length-3, url.length)
+    // url = window.location.href,
+    // id = url.slice(url.length-3, url.length),
+    urlParam = new URLSearchParams(window.location.search),
+    id = parseFloat(urlParam.get('id'))
   ){
+    console.log(urlParam);
+    console.log(urlParam.get('id'));
     let prevObj;
     for (let x in allProjects_DB){
       if (allProjects_DB[x].id == id){
