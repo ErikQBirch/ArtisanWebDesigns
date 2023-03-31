@@ -40,7 +40,7 @@ const pageStuff = {
     tripleA_h2 = helperFunctions.generateElement("h2","","","Triple A"),
     tripleA_p = helperFunctions.generateElement('p',"","",
       `Triple A was a brand idea I had for my own personal endeavors where I supported Artists, Animators, and Authors/Storytellers with my skills as a Web Designer. The reason why I place such an emphasis on building up artistic creators is because I believe the world is full of amazing and wonderful imagination! There's so much glorious creativity in the world, but sadly not all of it is wholesome or uplifting.<br><br>
-      I've been told that focusing on Artists, Animators, and Authors limits my scope and audience; so after some thought, I've decided that Triple A stands for <b>Amost Anything Art-related</b>. Art comes in many forms. Some of it good and some not. Thus the added "Almost" .<br><br>
+      I've been told that focusing on Artists, Animators, and Authors limits my scope and audience; so after some thought, I've decided that Triple A stands for <b>Almost Anything Art-related</b>. Art comes in many forms. Some of it good and some not. Thus the added "Almost" .<br><br>
       For the benefit of my future posterity and the rest of the kids in the world, I want to promote awesome artwork that is used for good! I might lack some abilities and experience in terms of creating my own art, but I sure can build up those who do have those blessings and use them to Light the World!`),
     tripleA_figure = helperFunctions.generateElement('figure'),
     tripleA_img = helperFunctions.generateElement('img',"","","Logo","../assets/resources/imgs/Favicon(TripleA).webp")
