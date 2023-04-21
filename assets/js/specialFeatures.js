@@ -1,9 +1,9 @@
 import { helperFunctions } from "./helperFunctions.js";
 
 export const specialFeatures = {
-  carousel: {
+  carousel: { //REVIEW IAN THOMPSON SITE FOR BETTER VERSION
     carousel_organism: function(
-      imgArray,
+      carousel_array,
       counter = 0,
       carousel_tag = helperFunctions.generateElement('div',"carousel"),
       slideHolder = helperFunctions.generateElement('div',"slideHolder"),
@@ -12,7 +12,7 @@ export const specialFeatures = {
       carousel_note = helperFunctions.generateElement('span',"carousel_note","","Click/Tap to enlarge")
     ){
       
-      imgArray.forEach(img => {
+      carousel_array.forEach(img => {
         let slide = this.carousel_singleSlide(img, counter);
         slideHolder.appendChild(slide);
         carousel_nav = this.carousel_navBtns(carousel_nav, counter);
