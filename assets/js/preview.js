@@ -137,7 +137,7 @@ const pageStuff = {
     nextProject = this.getNextProject(ID),
     btnHolder = helperFunctions.generateElement('div',"btnHolder"),
   ){
-    btnHolder = helperFunctions.appendChildren(btnHolder, previousProject, socialBtn, siteBtn, returnBtn, nextProject);
+    btnHolder = helperFunctions.appendChildren(btnHolder, returnBtn, socialBtn, siteBtn, previousProject, nextProject);
     // PreviousProject = helperFunctions.generateElement('a',"","","Previous<br>Project",`pages/preview.html?id=${001}`)
     return btnHolder;
 

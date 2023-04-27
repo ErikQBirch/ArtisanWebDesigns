@@ -67,12 +67,14 @@ const pageStuff = {
   moreSection: function(
     section = helperFunctions.generateElement('section',"seeMore"),
     moreBtn = helperFunctions.generateElement('button',"moreBtn","","See More"),
-    form = helperFunctions.generateElement('div'),
+    form = helperFunctions.generateElement('form'),
     input = helperFunctions.generateElement('input',"","text"),
     goBtn = helperFunctions.generateElement('button',"","","GO!"),
-    failedMsg = helperFunctions.generateElement('span',"","",`Click/Tap "GO" button to check input`)
+    failedMsg = helperFunctions.generateElement('span',"","",`Type in password to see more projects`)
   ){
     form = helperFunctions.appendChildren(form, input,goBtn);
+    form.setAttribute('onSubmit',"fullGallery(); return false");
+
     section = helperFunctions.appendChildren(section, moreBtn, form, failedMsg);
 
     form.style.display = "none";

@@ -158,10 +158,10 @@
   main #seeMore #moreBtn {
     width: 100%;
   }
-  main #seeMore div {
+  main #seeMore form {
     margin-top: 1rem;
   }
-  main #seeMore div input {
+  main #seeMore form input {
     text-align: center;
   }
 }
