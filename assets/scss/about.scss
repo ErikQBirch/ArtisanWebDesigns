@@ -19,7 +19,8 @@
         margin-bottom: 1rem;
       }
       p{
-        // margin-bottom: 2.5rem;
+        margin-bottom: 1rem;
+        text-indent: 1rem;
       }
       figure{
         width: 10rem;
@@ -48,6 +49,9 @@ main {
       div#tripleA{
         width:100%;
         padding: 0 2.5rem;
+        p{
+          text-indent: 2rem;
+        }
       }
     }
   }

@@ -198,6 +198,7 @@ export const specialFeatures = {
       },
     },
   },
+  fadeAndRotateImg: function(){},
   lazyLoading: function(
     imagesToLoad = document.querySelectorAll('img[data-src]'), //images elements with the attribute "data-src"; similar to css #data-src or .data-src
     loadImages = (img) => {
@@ -232,5 +233,5 @@ export const specialFeatures = {
         loadImages(img);
       });
     }
-  },
+  }
 }

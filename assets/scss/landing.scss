@@ -15,7 +15,7 @@ $desktopBannerImg: url("");
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 1rem;
+      margin: 2.5rem auto 2rem auto;
       h1{
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-weight: inherit;
@@ -221,6 +221,9 @@ $desktopBannerImg: url("");
     @include medHero;
     h1{
       font-size: 3rem;
+    }
+    #textDiv{
+      margin: 2.5rem auto;
     }
     #gallery{
       grid-template-columns: 1fr 1fr 1fr 1fr;

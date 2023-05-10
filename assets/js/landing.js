@@ -85,11 +85,11 @@ const pageStuff = {
     projectObj,
     a_tag = helperFunctions.generateElement("a","","","",`${projectObj.preview.previewPath}`),
     figure_tag = helperFunctions.generateElement('figure'),
-    img_tag = helperFunctions.generateElement('img',"","thumbnail",""),
+    img_tag = helperFunctions.generateElement('img',"","lazyLoad",""),
     overlay = helperFunctions.generateElement('div',"","",projectObj.name,""),
-    thumbNail = helperFunctions.customSpecialElements(img_tag,projectObj.thumbnailPath,projectObj.name)
+    lazyLoad = helperFunctions.customSpecialElements(img_tag,projectObj.thumbnailPath,projectObj.name)
   ){
-    figure_tag.appendChild(thumbNail);
+    figure_tag.appendChild(lazyLoad);
     overlay.style.color = projectObj.color;
     // overlay.style.fontWeight = "bolder";
     overlay.style.textShadow = "0 0 2.5px white";

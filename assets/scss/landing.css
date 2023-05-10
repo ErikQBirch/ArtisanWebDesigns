@@ -38,7 +38,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 2.5rem auto 2rem auto;
   }
   main #textDiv h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -225,6 +225,9 @@
   }
   main h1 {
     font-size: 3rem;
+  }
+  main #textDiv {
+    margin: 2.5rem auto;
   }
   main #gallery {
     grid-template-columns: 1fr 1fr 1fr 1fr;

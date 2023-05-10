@@ -90,6 +90,7 @@ main{
         font-family: 'Kalam', cursive;
         text-align:center;
         margin-bottom:0;
+        font-size: 3rem;
       }
       span{
         width: 100%;
@@ -97,6 +98,7 @@ main{
       }
       p{
         margin: 1rem 0;
+        text-indent: 1rem;
       }
       div{
         width: 100%;
@@ -176,7 +178,8 @@ main{
     #side1{
       width: 50%;
       #carousel{
-        outline: 5px solid black;
+        outline: 2.5px solid black;
+        box-shadow: 5px 5px 5px black;
         width: 45vw;
         margin: 0 auto;
         #slideHolder{
@@ -209,12 +212,13 @@ main{
         margin:0 auto;
         h1{
           margin:0;
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
         span{
         }
         p{
           font-size:1.5rem;
+          text-indent: 2.5rem;
         }
         div{
           button,

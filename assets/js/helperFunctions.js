@@ -16,7 +16,7 @@ export const helperFunctions = {
         element.setAttribute('loop', true);
         element.muted = 'muted';
         break;
-      case 'thumbnail':
+      case 'lazyLoad':
         element.setAttribute('src',"../assets/resources/imgs/placeholder.jpg");
         element.setAttribute('data-src', extraAttributes[0]);
         element.setAttribute('alt',extraAttributes[1]);
