@@ -3,7 +3,7 @@ export const allProjects_DB = {
     "id" : "001",
     "name": "Creative<br>Keturah",
     "thumbnailPath": "assets/resources/imgs/previewPics/CreativeKeturah/CK_thmb.webp",
-    "color":"red",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/preview.html?id=001",
       "sitePath":"https://erikqbirch.github.io/CreativeKeturah/",
@@ -17,7 +17,7 @@ export const allProjects_DB = {
     "id" : "002",
     "name": "Sapien Designs<br>Multi-Media",
     "thumbnailPath": "assets/resources/imgs/previewPics/SapienDesigns/SDthb.png",
-    "color":"orange",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/preview.html?id=002",
       "sitePath":"https://seo.sapiendesigns.com/",
@@ -31,7 +31,7 @@ export const allProjects_DB = {
     "id" : "003",
     "name": "Difference<br>Auto-Detailing",
     "thumbnailPath": "assets/resources/imgs/previewPics/DifferenceAutoDetailing/Diff_thmb.webp",
-    "color":"yellow",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/preview.html?id=003",
       "sitePath":"https://erikqbirch.github.io/DifferenceAutoDetailing/index.html",
@@ -47,7 +47,7 @@ export const allProjects_DB = {
     "id" : "004",
     "name": "Astha Rai",
     "thumbnailPath": "assets/resources/imgs/previewPics/AsthaRai/AR_thmb.webp",
-    "color":"lime",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/preview.html?id=004",
       "sitePath":"https://erikqbirch.github.io/AsthaRai/",
@@ -61,7 +61,7 @@ export const allProjects_DB = {
     "id" : "005",
     "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
-    "color":"cyan",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -75,7 +75,7 @@ export const allProjects_DB = {
     "id" : "006",
     "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
-    "color":"blue",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -89,7 +89,7 @@ export const allProjects_DB = {
     "id" : "007",
     "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
-    "color":"rgb(103,25,255)",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -103,7 +103,7 @@ export const allProjects_DB = {
     "id" : "008",
     "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
-    "color":"pink",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -117,7 +117,7 @@ export const allProjects_DB = {
     "id" : "009",
     "name": "About",
     "thumbnailPath": "assets/resources/imgs/me.jpg",
-    "color":"white",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/about.html",
       "sitePath":"pages/deadEnd.html",
@@ -131,7 +131,7 @@ export const allProjects_DB = {
     "id" : "010",
     "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
-    "color":"white",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -145,7 +145,7 @@ export const allProjects_DB = {
     "id" : "011",
     "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
-    "color":"white",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -159,7 +159,7 @@ export const allProjects_DB = {
     "id" : "012",
     "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
-    "color":"white",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",
@@ -173,7 +173,7 @@ export const allProjects_DB = {
     "id" : "013",
     "name": "Empty Slot",
     "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
-    "color":"white",
+    "color": "white",
     "preview" : {
       "previewPath": "pages/deadEnd.html",
       "sitePath":"pages/deadEnd.html",

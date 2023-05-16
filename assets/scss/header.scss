@@ -63,7 +63,6 @@
       .burger::before,
       .burger::after{
         background-color: white;
-        // box-shadow: 0 2px 5px rgba(0,8,85,1);
       }
     }
     #menu-btn.open {
@@ -254,7 +253,6 @@
         justify-content: space-between;
         align-items:center;
         transition: all 0.75s;
-        // background-color:rgba(255,255,255,1);
         li{
           height: 100%;
           width: 100%;
@@ -279,12 +277,12 @@
             transition: all 0.5s;
             // border-radius: 15px;
           }
-          a:hover,
-          a:active{
-            // border: 2.5px solid black;
+          a:hover{
             background-color:rgb(0,75,255);
-            // font-size:2rem;
-            // color: rgba(100,100,100,1)
+          }
+          a:active, a:focus{
+            text-decoration: underline;
+            background-color:rgb(0, 50, 150);
           }
           a.current{
             text-decoration:underline;
