@@ -29,7 +29,8 @@ export const helperFunctions = {
           alert("Copied the text: " + extraAttributes[0]);
         })
         break;
-
+      default:
+        break;
     }
     return element;
   },
