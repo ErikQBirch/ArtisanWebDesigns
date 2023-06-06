@@ -42,7 +42,7 @@ const pageStuff = {
       <p>I've been told that focusing on Artists, Animators, and Authors limits my scope and audience; so after some thought, I've decided to change the name to <b>Artisan Web Designs</b> (mostly to keep the logo idea). Art comes in a variety of different forms and flavors, and web desiging is one of them.</p>
       <p>For the benefit of my future posterity and the rest of the kids in the world, I want to promote awesome artwork that is used for good! I might lack some abilities and experience in terms of creating my own art, but I sure can build up those who do have those blessings and use them to Light the World!</p>`),
     tripleA_figure = helperFunctions.generateElement('figure'),
-    tripleA_img = helperFunctions.generateElement('img',"","","Logo","../assets/resources/imgs/ArtisanWebDesignLogo.webp")
+    tripleA_img = helperFunctions.generateElement('img',"","","Logo","../assets/resources/imgs/MyIcon.webp")
   ){
     tripleA_figure.appendChild(tripleA_img);
     erik_figure.appendChild(erik_img);
