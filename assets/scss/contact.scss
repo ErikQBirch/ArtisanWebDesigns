@@ -10,6 +10,7 @@
       font-weight: inherit;
       text-align:center;
       text-decoration:underline;
+      color:orange;
     }
     div#contentHolder{
       width: 50vw;
@@ -20,7 +21,7 @@
       grid-template-rows: 1fr 1fr;
       a:link,
       a:visited{
-        color: rgba(25,25,25,1);
+        color: orange;
         display:flex;
         align-items:center;
         justify-content: center;

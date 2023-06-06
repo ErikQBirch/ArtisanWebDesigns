@@ -39,6 +39,7 @@
     font-weight: inherit;
     text-align: center;
     text-decoration: underline;
+    color: orange;
   }
   main div#contentHolder {
     width: 50vw;
@@ -50,7 +51,7 @@
   }
   main div#contentHolder a:link,
   main div#contentHolder a:visited {
-    color: rgb(25, 25, 25);
+    color: orange;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -126,11 +126,14 @@
     font-size: 0.75rem;
     transition: background-color 0.5s;
   }
-  main #side2 #infoTag div a:link:hover, main #side2 #infoTag div a:link:active, main #side2 #infoTag div a:link:focus,
-  main #side2 #infoTag div a:visited:hover,
+  main #side2 #infoTag div a:link:hover,
+  main #side2 #infoTag div a:visited:hover {
+    background-color: rgb(0, 75, 255);
+  }
+  main #side2 #infoTag div a:link:active, main #side2 #infoTag div a:link:focus,
   main #side2 #infoTag div a:visited:active,
   main #side2 #infoTag div a:visited:focus {
-    background-color: rgb(0, 75, 255);
+    background-color: rgb(0, 50, 150);
   }
   main #preview {
     position: fixed;

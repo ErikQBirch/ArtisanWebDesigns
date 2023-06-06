@@ -330,8 +330,8 @@
           margin-left: 1rem;
           font-family:Verdana, Geneva, Tahoma, sans-serif;
           text-decoration: none;
-          color: rgba(255,255,255,1);
-          text-shadow: 0 0 5px white;
+          color: orange;
+          
           font-size: 1.25rem;
           span{
             display:flex;
@@ -345,6 +345,7 @@
           &:hover{
             // color: rgb(0,75,255);
             font-style:italic;
+            text-shadow: 0 0 5px orange;
           }
         }
       }

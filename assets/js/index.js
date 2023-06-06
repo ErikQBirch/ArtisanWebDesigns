@@ -47,7 +47,7 @@ const pageStuff = {
         favicon.rel = 'icon';
         document.getElementsByTagName('head')[0].appendChild(favicon);
     }
-    favicon.href = `${pathAdjuster[0]}assets/resources/imgs/B.ico`;
+    favicon.href = `${pathAdjuster[0]}assets/resources/imgs/MyFavicon.ico`;
     // console.log(favicon);
   },
   footer: function(

@@ -131,9 +131,11 @@ main{
           margin: 0.25rem;
           font-size: 0.75rem;
           transition: background-color 0.5s;
-          &:hover,&:active,&:focus{
+          &:hover{
             background-color: rgb(0,75,255);
-            // background-color: rgba(100,100,100,1)
+          }
+          &:active,&:focus{
+            background-color: rgb(0,50,150);
           }
         }
       }

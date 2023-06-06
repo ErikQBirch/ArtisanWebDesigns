@@ -321,8 +321,7 @@
     margin-left: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px white;
+    color: orange;
     font-size: 1.25rem;
   }
   header #logoArea #extraNav span {
@@ -334,5 +333,6 @@
   }
   header #logoArea #extraNav:hover {
     font-style: italic;
+    text-shadow: 0 0 5px orange;
   }
 }/*# sourceMappingURL=index.css.map */

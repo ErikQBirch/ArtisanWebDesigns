@@ -10,6 +10,7 @@
       font-weight: inherit;
       text-align:center;
       text-decoration:underline;
+      color:orange;
     }
     article{
       #side_1,
@@ -21,8 +22,7 @@
         flex-direction:column;
         margin: 2.5rem auto 1.5rem auto;
         h2{
-          // font-family: 'Kalam', cursive;
-          font-family:'Pristina', cursive;
+          font-family: 'Kalam', cursive;
         }
         p{
           text-indent: 1rem;
