@@ -7,8 +7,9 @@
     top: 0rem;
     transition:top 0.75s;
     z-index: 3;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,10,0) 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,10,0) 100%);
+    color:white;
     #logoArea{
       position:absolute;
       z-index: 2;
@@ -40,10 +41,12 @@
       .burger::after{
         width: 35px;
         height: 3px;
-        background-color:black;
+        background-color:white;
+        background-color: orange;
         border-radius: 5px;
         transition: all 0.25s ease-in-out;
-        box-shadow: 0 2px 5px rgba(255,255,255,1);
+        // box-shadow: 0 2px 5px rgba(255,255,255,1);
+        box-shadow: 0 2px 5px orange;
       }
       .burger::before,
       .burger::after{
@@ -57,14 +60,20 @@
         transform: translateY(12px);
       }  
     }
-    div#menu-btn:hover{
-      background-color: rgb(0,75,255);
-      .burger,
-      .burger::before,
-      .burger::after{
-        background-color: white;
+    div#menu-btn{
+      &:hover{
+        background-color: orange;
+        .burger,
+        .burger::before,
+        .burger::after{
+          background-color: white;
+        }
+      }
+      &:active, &:focus{
+        background-color: rgb(0,75,255);
       }
     }
+    
     #menu-btn.open {
       // right: 25px;
       .burger,
@@ -166,8 +175,11 @@
         ul{
           li:hover,
           li:focus{
-            background-color: rgb(0,75,255);
+            background-color: orange;
             // font-style: italic;
+          }
+          li:active,li:focus{
+            background-color: rgb(0,75,255);
           }
         }
       }
@@ -267,7 +279,7 @@
             padding:  0rem;
             height: 100%;
             width: 100%;
-            color:rgba(24,24,24,1);
+            color:rgba(255,255,255,1);
             text-shadow: 0 0 5px white;
             // background-color: white;;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -278,11 +290,15 @@
             // border-radius: 15px;
           }
           a:hover{
-            background-color:rgb(0,75,255);
+            color:white;
+            background-color: orange;
           }
           a:active, a:focus{
             text-decoration: underline;
             background-color:rgb(0, 50, 150);
+            background-color:rgb(0,75,255);
+            // background-color: rgb(100,100,100);
+            // color:orange;
           }
           a.current{
             text-decoration:underline;
@@ -290,7 +306,8 @@
         }
       }
       ul:hover{
-        background-color:rgba(25,25,25,1);
+        // background-color:rgba(25,25,25,1);
+        background-color: rgba(50,50,50,0.75);
         li{
           a:link,
           a:visited{
@@ -313,7 +330,7 @@
           margin-left: 1rem;
           font-family:Verdana, Geneva, Tahoma, sans-serif;
           text-decoration: none;
-          color: rgba(25,25,25,1);
+          color: rgba(255,255,255,1);
           text-shadow: 0 0 5px white;
           font-size: 1.25rem;
           span{
@@ -326,7 +343,7 @@
           }
           // transition: color 0.5s;
           &:hover{
-            color: rgb(0,75,255);
+            // color: rgb(0,75,255);
             font-style:italic;
           }
         }

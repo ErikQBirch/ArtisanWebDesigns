@@ -92,7 +92,7 @@ const pageStuff = {
     figure_tag.appendChild(lazyLoad);
     overlay.style.color = projectObj.color;
     // overlay.style.fontWeight = "bolder";
-    overlay.style.textShadow = "0 0 2.5px white";
+    // overlay.style.textShadow = "0 0 2.5px white";
     a_tag = helperFunctions.appendChildren(a_tag, figure_tag, overlay);
     return a_tag;
   },

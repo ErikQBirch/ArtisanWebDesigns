@@ -19,7 +19,8 @@
       position: absolute;
       height: 30%;
       width: 100%;
-      background-color: rgba(0,0,0,0.6);
+      // background-color: rgba(0,0,0,0.6);
+      background: linear-gradient(360deg, rgba(025,25,25,1) 0%, rgba(25,25,5,0.6) 80%,rgba(25,25,5,0) 100%);
       color:white;
       display:flex;
       align-items:center;

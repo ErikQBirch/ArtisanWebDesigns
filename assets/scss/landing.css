@@ -21,7 +21,7 @@
     position: absolute;
     height: 30%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(360deg, rgb(25, 25, 25) 0%, rgba(25, 25, 5, 0.6) 80%, rgba(25, 25, 5, 0) 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -38,7 +38,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2.5rem auto 2rem auto;
+    padding: 2.5rem 0 2rem 0;
+    margin-top: 0;
+    color: rgb(0, 75, 255);
+    color: orange;
   }
   main #textDiv h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -51,6 +54,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  main #gallery a div {
+    text-shadow: 2.5px 2.5px 5px black;
+  }
   main #gallery a:link,
   main #gallery a:visited {
     position: relative;
@@ -60,7 +66,6 @@
     justify-content: center;
     font-family: "Kalam", cursive;
     text-align: center;
-    color: white;
     width: 100%;
   }
   main #gallery a:link figure,
@@ -92,25 +97,30 @@
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 165, 0, 0.514);
+    text-shadow: 2.5px 2.5px 5px black;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: top 0.75s;
   }
   main #gallery a:hover figure,
-  main #gallery a:active figure {
+  main #gallery a:active figure,
+  main #gallery a:focus figure {
     filter: blur(5px);
   }
   main #gallery a:hover div,
-  main #gallery a:active div {
+  main #gallery a:active div,
+  main #gallery a:focus div {
     top: 0;
   }
   main #gallery a:focus figure {
     filter: blur(5px);
   }
   main #gallery a:focus div {
+    color: orange;
     background-color: rgba(0, 75, 255, 0.5);
+    text-shadow: 1px 1px 5px black;
   }
   main #gallery a.About {
     display: none;
@@ -143,9 +153,12 @@
   }
   main #seeMore button {
     color: white;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(50, 50, 50);
+    background-color: orange;
+    text-shadow: 1px 1px 5px black;
     border: none;
     font-size: 1rem;
+    font-weight: bolder;
     padding: 0.5rem;
     transition: background-color 0.25s;
     cursor: pointer;
@@ -229,7 +242,7 @@
     font-size: 3rem;
   }
   main #textDiv {
-    margin: 2.5rem auto;
+    margin: 0rem auto;
   }
   main #gallery {
     grid-template-columns: 1fr 1fr 1fr 1fr;
