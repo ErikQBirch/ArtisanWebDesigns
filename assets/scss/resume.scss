@@ -74,7 +74,10 @@
             border-radius: 5px;
             cursor:pointer;
             transition: background-color 0.25s;
-            &:hover,&:active,&:focus{
+            &:hover{
+              background-color: rgba(255,165,0,0.75);
+            }
+            &:active,&:focus{
               background-color: rgba(0,75,255,0.5);
             }
           }
@@ -90,13 +93,17 @@
           border:none;
           background-color: transparent;
           cursor:pointer;
+          color:white;
           transition: color 0.25s;
         }
         button.currentBtn{
-          color: rgba(0,0,0,0.5);
+          color:rgb(0,75,255);
         }
         button{
-          &:hover,&:active,&:focus{
+          &:hover{
+            color:orange;
+          }
+          &:active,&:focus{
             color:rgb(0,75,255);
           }
         }
