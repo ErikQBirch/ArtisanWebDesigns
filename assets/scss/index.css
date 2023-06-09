@@ -28,6 +28,7 @@
     height: 100%;
   }
   header #logoArea #logoLink img {
+    filter: saturate(1.5);
     height: 100%;
   }
   header #extraNav {
