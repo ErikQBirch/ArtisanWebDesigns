@@ -16,7 +16,7 @@ export const allProjects_DB = {
   "project002": {
     "id" : "002",
     "name": "Sapien Designs<br>Multi-Media",
-    "thumbnailPath": "assets/resources/imgs/previewPics/SapienDesigns/SDthb.png",
+    "thumbnailPath": "assets/resources/imgs/previewPics/SapienDesigns/SDthb.webp",
     "color": "white",
     "preview" : {
       "previewPath": "pages/preview.html?id=002",
