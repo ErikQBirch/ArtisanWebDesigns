@@ -10,7 +10,7 @@ const pageStuff = {
   hero: function(
     hero_tag = helperFunctions.generateElement('div',"hero"),
     figure_tag = helperFunctions.generateElement('figure'),
-    img_tag = helperFunctions.generateElement('img',"","","","../assets/resources/imgs/aboutBanner.webp"),
+    img_tag = helperFunctions.generateElement('img',"","","","../assets/resources/imgs/erik.webp"),
     banner_tag = helperFunctions.generateElement('div', "banner","","I consider myself as a decent human being to say the least...")
   ){
     figure_tag.appendChild(img_tag);
