@@ -26,8 +26,19 @@
       figure{
         width: 10rem;
         margin: 2.5rem auto;
+        box-shadow: 0 0 10px white;
+        border-radius: 5px;
+        overflow: hidden;
         img{
           width: 100%;
+        }
+      }
+      a:link{
+        display:flex;
+        width: 10rem;
+        margin: 2.5rem auto;
+        figure{
+          margin:0;
         }
       }
     }

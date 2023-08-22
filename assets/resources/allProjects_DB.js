@@ -73,16 +73,16 @@ export const allProjects_DB = {
   },
   "project006": {
     "id" : "006",
-    "name": "Empty Slot",
-    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "name": "Travers Tile",
+    "thumbnailPath": "assets/resources/imgs/previewPics/TraversTile/TT_thmb.webp",
     "color": "white",
     "preview" : {
-      "previewPath": "pages/deadEnd.html",
-      "sitePath":"pages/deadEnd.html",
-      "socialPath":"",
-      "year":2022,
-      "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],
-      "description" : ""
+      "previewPath": "pages/preview.html?id=006",
+      "sitePath":"https://erikqbirch.github.io/TraversTile/",
+      "socialPath":"deadEnd.html",
+      "year":2023,
+      "carouselImgs" :["assets/resources/imgs/previewPics/TraversTile/TT1.webp","assets/resources/imgs/previewPics/TraversTile/TT2.webp","assets/resources/imgs/previewPics/TraversTile/TT3.webp","assets/resources/imgs/previewPics/TraversTile/TT4.webp","assets/resources/imgs/previewPics/TraversTile/TT5.webp"],
+      "description" : "<p>Ian Travers Thompson has been one of my best friends growing up and has been a very reliable and supportive person to me. This said, I shouldn't have been surprised when he reached out to me and asked me to build him a website. Yet surprised I was</p><p>Once he provided me with his logo and color scheme, I was able to whip up a simple design suitable for his Tiling company. Add sample pictures also provided by him, a message from him to his clients, and some contact info; the website was able to be completed and I must say looks almost as polished as his tiling work!"
     }
   },
   "project007": {

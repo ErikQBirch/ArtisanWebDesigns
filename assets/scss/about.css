@@ -18,7 +18,7 @@
     justify-content: center;
   }
   main #hero figure img {
-    height: 60vh;
+    height: 100%;
   }
   main #hero #banner {
     position: absolute;
@@ -58,14 +58,29 @@
   main div#mainContent figure {
     width: 10rem;
     margin: 2.5rem auto;
+    box-shadow: 0 0 10px white;
+    border-radius: 5px;
+    overflow: hidden;
   }
   main div#mainContent figure img {
     width: 100%;
+  }
+  main div#mainContent a:link {
+    display: flex;
+    width: 10rem;
+    margin: 2.5rem auto;
+  }
+  main div#mainContent a:link figure {
+    margin: 0;
   }
 }
 @media only all and (min-width: 760px) {
   main #hero figure {
     align-items: flex-start;
+  }
+  main #hero figure img {
+    height: initial;
+    width: 100%;
   }
   main #hero #banner {
     font-size: 1.5rem;
