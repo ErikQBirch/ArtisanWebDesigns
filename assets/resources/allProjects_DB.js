@@ -59,16 +59,16 @@ export const allProjects_DB = {
   },
   "project005": {
     "id" : "005",
-    "name": "Empty Slot",
-    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "name": "Paulo Galamgam",
+    "thumbnailPath": "assets/resources/imgs/previewPics/PauloGalamgam/PG_thmb.webp",
     "color": "white",
     "preview" : {
-      "previewPath": "pages/deadEnd.html",
+      "previewPath": "pages/preview.html?id=005",
       "sitePath":"pages/deadEnd.html",
-      "socialPath":"",
-      "year":2022,
-      "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],
-      "description" : ""
+      "socialPath":"https://www.linkedin.com/in/paulo-galamgam-46716a141/",
+      "year":2023,
+      "carouselImgs" :["assets/resources/imgs/previewPics/PauloGalamgam/PG1.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG2.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG3.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG4.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG5.webp"],
+      "description" : "<p>I found Paulo Galamgam on LinkedIn and was greatly impressed by the quality of his artwork. Suprised that he didn't have his own website; I reached out to him and asked if I could use his artwork to build a website for him (nothing official, but as a work of fan art in the form of web design). With his gracious permission, I started workinng on a website fit for his content.</p><p>I based the theme and design on the Legend of Zelda Breathe of the Wild. Implementing a similar UI/UX design from the both game itself and the Shieka Slate.</p>"
     }
   },
   "project006": {

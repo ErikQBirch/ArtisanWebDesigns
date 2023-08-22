@@ -11,13 +11,15 @@
     height: fit-content;
   }
   main #hero figure {
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 60vh;
     width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  main #hero figure img {
+    height: 100%;
   }
   main #hero #banner {
     position: absolute;
@@ -45,7 +47,7 @@
     cursor: pointer;
   }
   main #hero figure {
-    filter: blur(10px);
+    filter: blur(5px);
     height: 100%;
   }
   main #hero figure img {
@@ -76,6 +78,7 @@
     align-items: flex-start;
   }
   main #hero figure img {
+    height: initial;
     width: 100%;
   }
   main #hero #banner {
