@@ -18,6 +18,9 @@
     align-items: center;
     justify-content: center;
   }
+  main #hero figure img {
+    width: 250%;
+  }
   main #hero #banner {
     position: absolute;
     height: 30%;
@@ -46,8 +49,7 @@
     height: 50vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   main div#contentHolder a:link,
   main div#contentHolder a:visited {
@@ -61,13 +63,13 @@
     width: fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    font-size: 5rem;
+    font-size: 4rem;
     text-decoration: none;
     transition: color 0.25s;
   }
   main div#contentHolder a:link i,
   main div#contentHolder a:visited i {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   main div#contentHolder a:hover,
   main div#contentHolder a:active {
@@ -78,9 +80,6 @@
   main #hero figure {
     align-items: flex-start;
   }
-  main #hero figure img {
-    width: 100%;
-  }
   main #hero #banner {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -88,6 +87,8 @@
   main div#contentHolder {
     width: 50vw;
     height: 50vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   main div#contentHolder a:link i,
   main div#contentHolder a:visited i {
@@ -101,9 +102,6 @@
   main #hero figure {
     align-items: center;
     height: 75vh;
-  }
-  main #hero figure img {
-    width: 100%;
   }
   main #hero #banner {
     font-size: 1.75rem;
@@ -124,7 +122,7 @@
   }
   main div#contentHolder a:link i,
   main div#contentHolder a:visited i {
-    font-size: 10rem;
+    font-size: 7.5rem;
   }
 }
 @media only all and (min-width: 1200px) {

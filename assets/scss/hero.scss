@@ -5,14 +5,14 @@
     z-index: 0;
     height: fit-content;
     figure{
-      height: fit-content;
+      height: 60vh;
       width: 100%;
       overflow:hidden;
       display:flex;
       align-items:center;
       justify-content: center;;
       img{
-        // height: 100%;
+        height: 100%;
       }
     }
     #banner{
@@ -40,10 +40,10 @@
     figure{
       align-items: flex-start;
       img{
-        // height: 100%;
+        height: initial;
         width: 100%;
+        // height: 175%;
         // width: 100%;
-        // height: 200%;
       }
     }
     #banner{
@@ -59,10 +59,7 @@
       align-items: center;
       height: 75vh;
       img{
-        // height:150%;
-        width: 100%;
-        // width: 100%;
-        // height: 200%;
+        // height: 100%;
       }
     }
     #banner{
@@ -76,7 +73,7 @@
   #hero{
     height:75vh;
     figure{
-      height: 100%;
+      
       img{
       }
     }

@@ -17,8 +17,8 @@
       height: 50vw;
       margin: 0 auto;
       display:grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      // grid-template-rows: 1fr 1fr;
       a:link,
       a:visited{
         color: orange;
@@ -29,11 +29,11 @@
         align-self:center;
         width: fit-content;
         height:fit-content;
-        font-size: 5rem;
+        font-size: 4rem;
         text-decoration: none;
         transition: color 0.25s;
         i{
-          font-size: 5rem;
+          font-size: 4rem;
           // height:100%;
           // width: 100%;
         }
@@ -51,6 +51,8 @@
     div#contentHolder{
       width: 50vw;
       height: 50vw;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       a:link,
       a:visited{
         // width: 100%;
@@ -81,7 +83,7 @@
         // width: 100%;
         // height:100%;
         i{
-          font-size: 10rem;
+          font-size: 7.5rem;
         }
       }
     }

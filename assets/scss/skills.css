@@ -10,13 +10,15 @@
     height: fit-content;
   }
   main #hero figure {
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 60vh;
     width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  main #hero figure img {
+    height: 100%;
   }
   main #hero #banner {
     position: absolute;
@@ -70,6 +72,7 @@
     align-items: flex-start;
   }
   main #hero figure img {
+    height: initial;
     width: 100%;
   }
   main #hero #banner {
@@ -84,9 +87,6 @@
   main #hero figure {
     align-items: center;
     height: 75vh;
-  }
-  main #hero figure img {
-    width: 100%;
   }
   main #hero #banner {
     font-size: 1.75rem;
@@ -121,8 +121,5 @@
 @media only all and (min-width: 1200px) {
   #hero {
     height: 75vh;
-  }
-  #hero figure {
-    height: 100%;
   }
 }/*# sourceMappingURL=skills.css.map */
