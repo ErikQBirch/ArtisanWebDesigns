@@ -103,6 +103,7 @@
   main article #side_1 p,
   main article #side_2 p {
     text-indent: 2.5rem;
+    line-height: 1.75rem;
   }
   main article #side_2 {
     display: flex;

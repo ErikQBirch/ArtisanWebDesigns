@@ -10,8 +10,7 @@
     height: fit-content;
   }
   main #hero figure {
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 60vh;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -19,7 +18,7 @@
     justify-content: center;
   }
   main #hero figure img {
-    width: 250%;
+    height: 100%;
   }
   main #hero #banner {
     position: absolute;
@@ -80,6 +79,10 @@
   main #hero figure {
     align-items: flex-start;
   }
+  main #hero figure img {
+    height: initial;
+    width: 100%;
+  }
   main #hero #banner {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -128,8 +131,5 @@
 @media only all and (min-width: 1200px) {
   #hero {
     height: 75vh;
-  }
-  #hero figure {
-    height: 100%;
   }
 }/*# sourceMappingURL=contact.css.map */
