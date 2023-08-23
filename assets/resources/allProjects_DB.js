@@ -57,32 +57,32 @@ export const allProjects_DB = {
       "description" : "<p>I connected with Astha Rai at the start of the year. After obtaining permission from Astha to use her content, I constructed this website free of charge for the sole purpose of further developing my coding skills and style.</p><p>A bit of trial and error was had due to the privleage of free-range creativity, but in the end I was able to produce a website suitable to display Astha's magnificent works!</p>"
     }
   },
-  "project005": {
-    "id" : "005",
-    "name": "Paulo Galamgam",
-    "thumbnailPath": "assets/resources/imgs/previewPics/PauloGalamgam/PG_thmb.webp",
-    "color": "white",
-    "preview" : {
-      "previewPath": "pages/preview.html?id=005",
-      "sitePath":"pages/deadEnd.html",
-      "socialPath":"https://www.linkedin.com/in/paulo-galamgam-46716a141/",
-      "year":2023,
-      "carouselImgs" :["assets/resources/imgs/previewPics/PauloGalamgam/PG1.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG2.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG3.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG4.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG5.webp"],
-      "description" : "<p>I found Paulo Galamgam on LinkedIn and was greatly impressed by the quality of his artwork. Suprised that he didn't have his own website; I reached out to him and asked if I could use his artwork to build a website for him (nothing official, but as a work of fan art in the form of web design). With his gracious permission, I started workinng on a website fit for his content.</p><p>I based the theme and design on the Legend of Zelda Breathe of the Wild. Implementing a similar UI/UX design from the both game itself and the Shieka Slate.</p>"
-    }
-  },
   "project006": {
-    "id" : "006",
+    "id" : "005",
     "name": "Travers Tile",
     "thumbnailPath": "assets/resources/imgs/previewPics/TraversTile/TT_thmb.webp",
     "color": "white",
     "preview" : {
-      "previewPath": "pages/preview.html?id=006",
+      "previewPath": "pages/preview.html?id=005",
       "sitePath":"https://erikqbirch.github.io/TraversTile/",
       "socialPath":"deadEnd.html",
       "year":2023,
       "carouselImgs" :["assets/resources/imgs/previewPics/TraversTile/TT1.webp","assets/resources/imgs/previewPics/TraversTile/TT2.webp","assets/resources/imgs/previewPics/TraversTile/TT3.webp","assets/resources/imgs/previewPics/TraversTile/TT4.webp","assets/resources/imgs/previewPics/TraversTile/TT5.webp"],
       "description" : "<p>Ian Travers Thompson has been one of my best friends growing up and has been a very reliable and supportive person to me. This said, I shouldn't have been surprised when he reached out to me and asked me to build him a website. Yet surprised I was</p><p>Once he provided me with his logo and color scheme, I was able to whip up a simple design suitable for his Tiling company. Add sample pictures also provided by him, a message from him to his clients, and some contact info; the website was able to be completed and I must say looks almost as polished as his tiling work!"
+    }
+  },
+  "project005": {
+    "id" : "006",
+    "name": "Paulo Galamgam",
+    "thumbnailPath": "assets/resources/imgs/previewPics/PauloGalamgam/PG_thmb.webp",
+    "color": "white",
+    "preview" : {
+      "previewPath": "pages/preview.html?id=006",
+      "sitePath":"https://erikqbirch.github.io/PLG/",
+      "socialPath":"https://www.linkedin.com/in/paulo-galamgam-46716a141/",
+      "year":2023,
+      "carouselImgs" :["assets/resources/imgs/previewPics/PauloGalamgam/PG1.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG2.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG3.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG4.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG5.webp"],
+      "description" : "<p>I found Paulo Galamgam on LinkedIn and was greatly impressed by the quality of his artwork. Suprised that he didn't have his own website; I reached out to him and asked if I could use his artwork to build a website for him (nothing official, but as a work of fan art in the form of web design). With his gracious permission, I started workinng on a website fit for his content.</p><p>I based the theme and design on the Legend of Zelda Breathe of the Wild. Implementing a similar UI/UX design from the both game itself and the Shieka Slate.</p>"
     }
   },
   "project007": {
