@@ -91,7 +91,7 @@ const pageStuff = {
     if (allProjects_DB[projectTitle].name == "Empty Slot"){
       newPath  = "../pages/deadEnd.html";
     } 
-    let newLink = helperFunctions.generateElement('a',"","",`${action}<br>Project`,newPath);
+    let newLink = helperFunctions.generateElement('a',"","",`${action}<br> Project`,newPath);
     return newLink;
   },
   main: function(
@@ -108,7 +108,8 @@ const pageStuff = {
     side1_tag = helperFunctions.generateElement('section',"side1"),
     carousel_organism_variable = specialFeatures.carousel.carousel_organism(prevObj.preview.carouselImgs)
     ){
-    side1_tag = helperFunctions.appendChildren(side1_tag, carousel_organism_variable[0], carousel_organism_variable[1], carousel_organism_variable[2])
+    // side1_tag = helperFunctions.appendChildren(side1_tag, carousel_organism_variable[0], carousel_organism_variable[1], carousel_organism_variable[2])
+    side1_tag = helperFunctions.appendChildren(side1_tag, carousel_organism_variable[0], carousel_organism_variable[1])
     return side1_tag;
   },
   side2(

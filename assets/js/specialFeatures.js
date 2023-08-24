@@ -9,7 +9,7 @@ export const specialFeatures = {
       slideHolder = helperFunctions.generateElement('div',"slideHolder"),
       slideControls = this.carousel_slideControls(),
       carousel_nav = helperFunctions.generateElement('div', "carousel_nav"),
-      carousel_note = helperFunctions.generateElement('span',"carousel_note","","Click/Tap to enlarge")
+      // carousel_note = helperFunctions.generateElement('span',"carousel_note","","Click/Tap to enlarge")
     ){
       
       carousel_array.forEach(img => {
@@ -17,11 +17,11 @@ export const specialFeatures = {
         slideHolder.appendChild(slide);
         carousel_nav = this.carousel_navBtns(carousel_nav, counter);
         counter++;
-        
       });
   
       carousel_tag = helperFunctions.appendChildren(carousel_tag, slideHolder,slideControls)
-      let carousel = [carousel_tag,carousel_nav, carousel_note];
+      // let carousel = [carousel_tag,carousel_nav, carousel_note];
+      let carousel = [carousel_tag,carousel_nav];
       return carousel;
   
     },
@@ -151,17 +151,17 @@ export const specialFeatures = {
         carousel.addEventListener('mouseleave', ()=>{
           this.startSlides(slideHolder,slideWidth);
         });
-        document.addEventListener('touchstart', (e) => { // SWIPE SCREEN
-          this.touchstartX = e.changedTouches[0].screenX;
-        });
-        document.addEventListener('touchend', (// SWIPE SCREEN
-          e, 
-          slideHolder = document.querySelector('#slideHolder'), 
-          slideWidth = this.getSlides()[this.index].clientWidth,
-          ) => { 
-          this.touchendX = e.changedTouches[0].screenX
-          this.checkDirection(slideHolder, slideWidth);
-        });
+        // document.addEventListener('touchstart', (e) => { // SWIPE SCREEN
+        //   this.touchstartX = e.changedTouches[0].screenX;
+        // });
+        // document.addEventListener('touchend', (// SWIPE SCREEN
+        //   e, 
+        //   slideHolder = document.querySelector('#slideHolder'), 
+        //   slideWidth = this.getSlides()[this.index].clientWidth,
+        //   ) => { 
+        //   this.touchendX = e.changedTouches[0].screenX
+        //   this.checkDirection(slideHolder, slideWidth);
+        // });
         nextBtn.addEventListener('click',()=>{this.moveToNextSlide(slideHolder, slideWidth)});
         prevBtn.addEventListener('click',()=>{this.moveToPrevSlide(slideHolder, slideWidth)});
         slideHolder.addEventListener('transitionend',()=>{
