@@ -9,7 +9,8 @@ const pageStuff = {
   ){
     body.insertBefore(this.main(), footer);
     specialFeatures.lazyLoading();
-    this.theEvents();
+    theEvents.clickEvents();
+    theEvents.heroEffect();
   },
   gallery: function(
     gallery_tag = helperFunctions.generateElement('section',"gallery"),
@@ -44,10 +45,15 @@ const pageStuff = {
   hero: function(
     hero_tag = helperFunctions.generateElement('div',"hero"),
     figure_tag = helperFunctions.generateElement('figure'),
-    img_tag = helperFunctions.generateElement('img',"","","","assets/resources/imgs/heroPics/hero4.webp"),
+    img_tag1 = helperFunctions.generateElement('img',"","","","assets/resources/imgs/heroPics/hero0.webp"),
+    img_tag2 = helperFunctions.generateElement('img',"","","","assets/resources/imgs/heroPics/hero1.webp"),
     banner_tag = helperFunctions.generateElement('div', "banner","","I live in a world that balances between the intracate power of science and the inspiring wonder of art!<br>I am a Web Designer!")
   ){
-    figure_tag.appendChild(img_tag);
+
+    img_tag1.classList.add('dying');
+    img_tag2.classList.add('keep');
+
+    figure_tag = helperFunctions.appendChildren(figure_tag, img_tag1, img_tag2);
     hero_tag = helperFunctions.appendChildren(hero_tag, figure_tag, banner_tag)
     return hero_tag
   },
@@ -96,7 +102,32 @@ const pageStuff = {
     a_tag = helperFunctions.appendChildren(a_tag, figure_tag, overlay);
     return a_tag;
   },
-  theEvents: function(
+  // theEvents: function(
+  //   moreSection = document.querySelector('#seeMore'),
+  //   moreDiv = moreSection.children[1]
+  // ){
+  //   console.log(moreSection)
+  //   moreSection.children[0].addEventListener('click',()=>{
+  //     moreSection.children[1].style.display = "flex";
+  //     moreSection.children[2].style.display = "flex";
+  //     moreSection.children[0].remove();
+  //   })
+  //   moreDiv.children[1].addEventListener('click', ()=>{
+  //     if (moreDiv.children[0].value == "a"){
+  //       moreSection.remove();
+  //       this.fullGallery();
+  //     }
+  //     else {
+  //       console.log("WRONG")
+  //       moreDiv.children[0].value = "";
+  //       console.log(moreSection.children[1])
+  //       moreSection.children[1].innerHTML = `Failed Attempt! Try Again!`
+  //     }
+  //   })
+  // },
+}
+const theEvents = {
+  clickEvents : function(
     moreSection = document.querySelector('#seeMore'),
     moreDiv = moreSection.children[1]
   ){
@@ -118,6 +149,38 @@ const pageStuff = {
         moreSection.children[1].innerHTML = `Failed Attempt! Try Again!`
       }
     })
+  },
+  heroEffect: function(
+    figure_tag = document.querySelector('#hero').children[0],
+    counter = 2,
+    fadeEffect = function(){
+      let dyingImg = document.querySelector(`img.dying`);
+      let subImg = document.querySelector(`img.keep`);
+      // let counter;
+      let newImg; 
+
+
+    
+      newImg = helperFunctions.generateElement('img',"","","",`assets/resources/imgs/heroPics/hero${counter}.webp`);
+
+      counter++;
+
+      if (counter == 5){
+        counter = 0;
+      }
+
+      dyingImg.remove();
+      subImg.classList.add("dying");
+      subImg.classList.remove('keep');
+      newImg.classList.add('keep');
+      figure_tag.appendChild(newImg);
+    
+
+    }
+  ){
+    let fadingImg = setInterval(()=>{
+      fadeEffect();
+    },10000)   
   }
 }
 
