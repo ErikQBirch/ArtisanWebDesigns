@@ -51,10 +51,10 @@ const pageStuff = {
   },
   side2: function(
     side2_tag = helperFunctions.generateElement('section',"side2"),
-    // carousel_organism_variable = this.carousel.carousel_organism(pageStuff.questions_array)
     carousel_organism_variable = specialFeatures.carousel.carousel_organism(pageStuff.questions_array)
     ){
-    side2_tag = helperFunctions.appendChildren(side2_tag, carousel_organism_variable[0], carousel_organism_variable[1], carousel_organism_variable[2])
+      console.log(carousel_organism_variable)
+      side2_tag = helperFunctions.appendChildren(side2_tag, carousel_organism_variable[0], carousel_organism_variable[1])
     return side2_tag;
   },
 
