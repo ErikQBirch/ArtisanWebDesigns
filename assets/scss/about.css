@@ -80,12 +80,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: inherit;
     text-align: center;
-    text-decoration: underline;
     color: orange;
   }
   main div#mainContent {
     width: 80%;
     margin: auto;
+    background-color: rgba(25, 25, 25, 0.75);
+    padding-top: 1rem;
   }
   main div#mainContent h2 {
     font-family: "Kalam", cursive;

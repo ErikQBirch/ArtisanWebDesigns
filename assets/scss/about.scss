@@ -9,12 +9,14 @@
       font-family:Verdana, Geneva, Tahoma, sans-serif;
       font-weight: inherit;
       text-align:center;
-      text-decoration:underline;
+      // text-decoration:underline;
       color:orange;
     }
     div#mainContent{
       width: 80%;
       margin: auto;
+      background-color:rgba(25,25,25,0.75);
+      padding-top:1rem;
       h2{
         font-family: 'Kalam', cursive;
         margin-bottom: 1rem;

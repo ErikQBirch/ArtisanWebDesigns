@@ -4,6 +4,10 @@ $desktopBannerImg: url("");
 @import "hero";
 
 @media only all and (min-width: 0) {
+  body{
+    background:none;
+    background-color: rgb(25,25,25);
+  }
   main{
     z-index: 1;
     @include mobileHero;
@@ -19,7 +23,7 @@ $desktopBannerImg: url("");
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-weight: inherit;
         text-align:center;
-        text-decoration:underline;
+        // text-decoration:underline;
         margin:0;
       }
       span{}
@@ -29,7 +33,7 @@ $desktopBannerImg: url("");
       display:grid;
       grid-template-columns: 1fr 1fr 1fr;
 
-      background-color: rgb(25,25,25);
+      // background-color: rgb(25,25,25);
       background:
       radial-gradient(circle farthest-side at 0% 50%,rgb(25,25,25) 23.5%,rgba(240,166,17,0) 0)21px 30px,
       radial-gradient(circle farthest-side at 0% 50%,rgba(187, 119, 17, 0.25) 24%,rgba(240,166,17,0) 0)19px 30px,

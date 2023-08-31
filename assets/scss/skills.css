@@ -80,8 +80,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: inherit;
     text-align: center;
-    text-decoration: underline;
     color: orange;
+    margin: 0 auto;
+    padding: 0.67 0;
+  }
+  main article {
+    background-color: rgba(25, 25, 25, 0.75);
+    padding: 1rem;
   }
   main article #side_1,
   main article #side_2 {

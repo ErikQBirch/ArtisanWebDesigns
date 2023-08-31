@@ -9,7 +9,7 @@
       font-family:Verdana, Geneva, Tahoma, sans-serif;
       font-weight: inherit;
       text-align:center;
-      text-decoration:underline;
+      // text-decoration:underline;
       color:orange;
     }
     div#contentHolder{
@@ -17,11 +17,12 @@
       height: 50vw;
       margin: 0 auto;
       display:grid;
-      grid-template-columns: 1fr;
-      // grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       a:link,
       a:visited{
         color: orange;
+        background-color: rgb(25,25,25);
         display:flex;
         align-items:center;
         justify-content: center;
@@ -51,8 +52,6 @@
     div#contentHolder{
       width: 50vw;
       height: 50vw;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
       a:link,
       a:visited{
         // width: 100%;
