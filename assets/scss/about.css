@@ -76,12 +76,6 @@
     z-index: 2;
     padding: 0 2.5rem;
   }
-  main h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: inherit;
-    text-align: center;
-    color: orange;
-  }
   main div#mainContent {
     width: 80%;
     margin: auto;
@@ -139,9 +133,6 @@
   main #hero #banner {
     font-size: 1.75rem;
     line-height: 2.5rem;
-  }
-  main h1 {
-    font-size: 3rem;
   }
   main div#mainContent {
     display: flex;

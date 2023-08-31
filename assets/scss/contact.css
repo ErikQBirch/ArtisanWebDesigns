@@ -76,12 +76,6 @@
     z-index: 2;
     padding: 0 2.5rem;
   }
-  main h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: inherit;
-    text-align: center;
-    color: orange;
-  }
   main div#contentHolder {
     width: 50vw;
     height: 50vw;
@@ -152,15 +146,13 @@
   main #hero {
     height: 75vh;
   }
-  main h1 {
-    font-size: 3rem;
-  }
   main div#contentHolder {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     width: 80vw;
     height: -moz-fit-content;
     height: fit-content;
+    margin: 1.5rem auto;
   }
   main div#contentHolder a:link i,
   main div#contentHolder a:visited i {

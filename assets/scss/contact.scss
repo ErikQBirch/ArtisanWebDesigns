@@ -5,13 +5,6 @@
     z-index: 1;
     padding:0;
     @include mobileHero;
-    h1{
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-      font-weight: inherit;
-      text-align:center;
-      // text-decoration:underline;
-      color:orange;
-    }
     div#contentHolder{
       width: 50vw;
       height: 50vw;
@@ -69,14 +62,12 @@
     #hero{
       height: 75vh;
     }
-    h1{
-      font-size: 3rem;
-    }
     div#contentHolder{
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;
       width: 80vw;
       height: fit-content;
+      margin: 1.5rem auto;
       a:link,
       a:visited{
         // width: 100%;

@@ -178,6 +178,15 @@
     filter: blur(0px);
     transition: filter 0.75s;
   }
+  main h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: inherit;
+    text-align: center;
+    color: orange;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    background-color: rgb(25, 25, 25);
+  }
   footer {
     height: 10rem;
     width: 100%;
@@ -310,6 +319,9 @@
   header nav#mainNav ul:hover li a:link,
   header nav#mainNav ul:hover li a:visited {
     color: white;
+  }
+  main h1 {
+    font-size: 3rem;
   }
 }
 @media only all and (min-width: 1200px) {
