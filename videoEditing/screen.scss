@@ -1,0 +1,26 @@
+@media only all and (min-width: 0){
+  body{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    article{
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      &.overlay{
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+      }
+      &#videoLayer{
+        z-index:0;
+        video{
+          source{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
