@@ -12,12 +12,52 @@
     height: 60vh;
     width: 100%;
     overflow: hidden;
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
   main #hero figure img {
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  main #hero figure img.keep {
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+  }
+  main #hero figure img.dying {
+    animation-name: fadeOut;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+    100% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0px);
+    }
   }
   main #hero #banner {
     position: absolute;
@@ -32,7 +72,7 @@
     font-size: 1rem;
     line-height: 1.5rem;
     bottom: 0vh;
-    z-index: 0;
+    z-index: 2;
     padding: 0 2.5rem;
   }
   main #textDiv {
@@ -43,12 +83,13 @@
     padding: 2.5rem 0 2rem 0;
     margin-top: 0;
     color: orange;
+    background-color: rgb(25, 25, 25);
   }
   main #textDiv h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: inherit;
     text-align: center;
-    text-decoration: underline;
+    padding: 0.67px 0;
     margin: 0;
   }
   main #gallery {

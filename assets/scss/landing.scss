@@ -4,12 +4,13 @@ $desktopBannerImg: url("");
 @import "hero";
 
 @media only all and (min-width: 0) {
+  body{
+    // background:none;
+    // background-color: rgb(25,25,25);
+  }
   main{
     z-index: 1;
     @include mobileHero;
-    #hero{
-
-    }
     #textDiv{
       display: flex;
       flex-direction: column;
@@ -18,16 +19,13 @@ $desktopBannerImg: url("");
       padding: 2.5rem 0 2rem 0;
       margin-top:0;
       color: orange;
-      // color:white;
-      
-      // background-color: rgb(17,31,37);
-      // background-color:rgb(0, 25, 75);
+      background-color: rgb(25,25,25);
       h1{
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        // font-family: 'Kalam', cursive;
         font-weight: inherit;
         text-align:center;
-        text-decoration:underline;
+        // text-decoration:underline;
+        padding: 0.67px 0;
         margin:0;
       }
       span{}
@@ -36,6 +34,27 @@ $desktopBannerImg: url("");
     #gallery{
       display:grid;
       grid-template-columns: 1fr 1fr 1fr;
+
+      // // background-color: rgb(25,25,25);
+      // background:
+      // radial-gradient(circle farthest-side at 0% 50%,rgb(25,25,25) 23.5%,rgba(240,166,17,0) 0)21px 30px,
+      // radial-gradient(circle farthest-side at 0% 50%,rgba(187, 119, 17, 0.25) 24%,rgba(240,166,17,0) 0)19px 30px,
+      // linear-gradient(rgb(25,25,25) 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,rgb(25,25,25) 0)0 0,
+      // linear-gradient(150deg,rgb(25,25,25) 24%,rgba(187, 119, 17, 0.25) 0,rgba(187, 119, 17, 0.25) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,rgba(187, 119, 17, 0.25) 0,rgba(187, 119, 17, 0.25) 76%,rgb(25,25,25) 0)0 0,
+      // linear-gradient(30deg,rgb(25,25,25) 24%,rgba(187, 119, 17, 0.25) 0,rgba(187, 119, 17, 0.25) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,rgba(187, 119, 17, 0.25) 0,rgba(187, 119, 17, 0.25) 76%,rgb(25,25,25) 0)0 0,
+      // linear-gradient(90deg,rgba(187, 119, 17, 0.25) 2%,rgb(25,25,25) 0,rgb(25,25,25) 98%,rgba(187, 119, 17, 0.25) 0%)0 0 rgb(25,25,25);
+      // background-size: 40px 60px;
+
+
+      // background-color: rgb(25,25,25);
+      // background-image:
+      // radial-gradient(orange, rgba(255,165,0,.2) 2px, transparent 40px),
+      // radial-gradient(orange, rgba(255,165,0,.15) 1px, transparent 30px),
+      // radial-gradient(orange, rgba(255,165,0,.1) 2px, transparent 40px),
+      // radial-gradient(rgba(255,165,0,.4), rgba(255,165,0,.1) 2px, transparent 30px);
+      // background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+      // background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+
       a{
         div{
           text-shadow: 2.5px 2.5px 5px black;
