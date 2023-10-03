@@ -78,7 +78,7 @@ export const allProjects_DB = {
     "color": "white",
     "preview" : {
       "previewPath": "pages/preview.html?id=006",
-      "sitePath":"https://erikqbirch.github.io/PLG/",
+      "sitePath":"https://erikqbirch.github.io/PauloGalamgam/",
       "socialPath":"https://www.linkedin.com/in/paulo-galamgam-46716a141/",
       "year":2023,
       "carouselImgs" :["assets/resources/imgs/previewPics/PauloGalamgam/PG1.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG2.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG3.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG4.webp","assets/resources/imgs/previewPics/PauloGalamgam/PG5.webp"],
