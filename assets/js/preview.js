@@ -123,8 +123,8 @@ const pageStuff = {
   ){
     
     
-    info_tag = helperFunctions.appendChildren(info_tag, name, year, descript, btnHolder);
-    side2_tag.appendChild(info_tag);
+    info_tag = helperFunctions.appendChildren(info_tag, name, year, descript);
+    side2_tag = helperFunctions.appendChildren(side2_tag, info_tag, btnHolder);
 
     return side2_tag;
   },
