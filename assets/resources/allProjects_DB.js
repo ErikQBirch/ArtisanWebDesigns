@@ -183,4 +183,18 @@ export const allProjects_DB = {
       "description" : ""
     }
   },
+  "project014": {
+    "id" : "013",
+    "name": "Empty Slot",
+    "thumbnailPath": "assets/resources/imgs/placeHolder2.png",
+    "color": "white",
+    "preview" : {
+      "previewPath": "pages/deadEnd.html",
+      "sitePath":"pages/deadEnd.html",
+      "socialPath":"",
+      "year":2022,
+      "carouselImgs" :["assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg","assets/resources/imgs/placeholder.jpg"],
+      "description" : ""
+    }
+  },
 }
