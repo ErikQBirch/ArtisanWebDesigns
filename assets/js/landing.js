@@ -140,7 +140,7 @@ const theEvents = {
     moreDiv.children[1].addEventListener('click', ()=>{
       if (moreDiv.children[0].value == "a"){
         moreSection.remove();
-        this.fullGallery();
+        pageStuff.fullGallery();
       }
       else {
         console.log("WRONG")
