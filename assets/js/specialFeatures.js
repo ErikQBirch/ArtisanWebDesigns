@@ -3,6 +3,7 @@ import { helperFunctions } from "./helperFunctions.js";
 export const specialFeatures = {
   carousel: { //REVIEW IAN THOMPSON SITE FOR BETTER VERSION
     carousel_organism: function(
+      imgUplinePath,
       carousel_array,
       counter = 0,
       carousel_tag = helperFunctions.generateElement('div',"carousel"),
@@ -13,7 +14,7 @@ export const specialFeatures = {
     ){
       
       carousel_array.forEach(img => {
-        let slide = this.carousel_singleSlide(img, counter);
+        let slide = this.carousel_singleSlide(imgUplinePath, img, counter);
         slideHolder.appendChild(slide);
         carousel_nav = this.carousel_navBtns(carousel_nav, counter);
         counter++;
@@ -42,10 +43,11 @@ export const specialFeatures = {
       return slideControls;
     },
     carousel_singleSlide: function(
+      imgUplinePath,
       imgPath,
       counter,
       figure = helperFunctions.generateElement('figure',`slide${counter}`, "slide"),
-      img = helperFunctions.generateElement('img',"","","carouselImg",`../${imgPath}`)){
+      img = helperFunctions.generateElement('img',"","","carouselImg",`../${imgUplinePath}${imgPath}`)){
         figure.appendChild(img);
         return figure;
     },

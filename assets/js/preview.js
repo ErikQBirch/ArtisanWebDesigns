@@ -106,7 +106,7 @@ const pageStuff = {
   side1: function(
     prevObj,
     side1_tag = helperFunctions.generateElement('section',"side1"),
-    carousel_organism_variable = specialFeatures.carousel.carousel_organism(prevObj.preview.carouselImgs)
+    carousel_organism_variable = specialFeatures.carousel.carousel_organism(prevObj.preview.imgUplinePath, prevObj.preview.carouselImgs)
     ){
     // side1_tag = helperFunctions.appendChildren(side1_tag, carousel_organism_variable[0], carousel_organism_variable[1], carousel_organism_variable[2])
     side1_tag = helperFunctions.appendChildren(side1_tag, carousel_organism_variable[0], carousel_organism_variable[1])

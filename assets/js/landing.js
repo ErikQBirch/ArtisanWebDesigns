@@ -93,7 +93,7 @@ const pageStuff = {
     figure_tag = helperFunctions.generateElement('figure'),
     img_tag = helperFunctions.generateElement('img',"","lazyLoad",""),
     overlay = helperFunctions.generateElement('div',"","",projectObj.name,""),
-    lazyLoad = helperFunctions.customSpecialElements(img_tag,projectObj.thumbnailPath,projectObj.name)
+    lazyLoad = helperFunctions.customSpecialElements(img_tag, "assets/resources/imgs/previewPics/"+projectObj.thumbnailPath,projectObj.name)
   ){
     figure_tag.appendChild(lazyLoad);
     overlay.style.color = projectObj.color;
