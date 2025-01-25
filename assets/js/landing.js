@@ -17,7 +17,7 @@ const pageStuff = {
     count = 0
   ){
     for (let project in allProjects_DB){
-        if (count < 9){
+        if (count < 8){
           let element = this.projectArticle(allProjects_DB[project])
           if (allProjects_DB[project].name == "About"){
             element.classList.add('About')

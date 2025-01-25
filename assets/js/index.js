@@ -52,7 +52,7 @@ const pageStuff = {
   },
   footer: function(
     footer_tag = helperFunctions.generateElement('footer'),
-    text = helperFunctions.generateElement('p',"","","Erik Q. Birch | ©2023 | Artisan Web Designs™")
+    text = helperFunctions.generateElement('p',"","Erik Q Birch","Erik Q. Birch | ©2023 | Artisan Web Designs™")
   ){
     footer_tag.appendChild(text);
     return footer_tag;
