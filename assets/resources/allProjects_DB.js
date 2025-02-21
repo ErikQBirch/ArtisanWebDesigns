@@ -6,8 +6,8 @@ export const allProjects_DB = {
     "color": "white",
     "preview" : {
       "previewPath": "pages/preview.html?id=001",
-      "sitePath":"https://erikqbirch.github.io/Amway/",
-      "socialPath":"https://www.instagram.com/Amway/",
+      "sitePath":"https://www.amway.com/en_US/myshop/EssentialsFromErik",
+      "socialPath":"https://www.amway.com/en_US/myshop/EssentialsFromErik",
       "year":2022,
       "imgUplinePath": "assets/resources/imgs/previewPics/Amway/",
       "carouselImgs" :["Amway1.webp","Amway2.webp"],
@@ -116,7 +116,7 @@ export const allProjects_DB = {
       "sitePath":"https://thesmithensemble.com/",
       "socialPath":"https://www.facebook.com/smithensemble.smithsixSmithEnsemble/",
       "year":2024,
-      "imgUplinePath": "assets/resources/imgs/previewPics/",
+      "imgUplinePath": "assets/resources/imgs/previewPics/SmithEnsemble/",
       "carouselImgs" :["SE1.webp","SE2.webp","SE3.webp","SE4.webp","SE5.webp"],
       "description" : "<p>After meeting her son working at the Provo Utah temple, Patricia Smith reached out to me and asked if I would be willing to make a website for her family's start-up music franchise.</p><p>She already had an existing website built by someone else, but she wanted it updated with features such as financial transactions and email contacting added. It took a while to fix up the necessary packages to the outdated website while also learn how to incorporate features I've never worked with before, but I was eventually able to deliver a quality website to this musical family!</p>"
     }
