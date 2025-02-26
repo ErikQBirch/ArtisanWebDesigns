@@ -7,6 +7,24 @@ const pageStuff = {
   ){
     body.insertBefore(this.main(), footer);
   },
+  email_form: function(
+    contact_container = helperFunctions.generateElement('div',"","contact-container"),
+    contact_form = helperFunctions.generateElement('form',"","contact-form","","https://api.web3forms.com/submit"),
+    // contact_title_holder = helperFunctions.generateElement('div',"","contact-title-holder"),
+    // h2=helperFunctions.generateElement('h2',"","","Reach Out Via Email"),
+    hiddenInput = helperFunctions.generateElement('input',"access_key","hidden"),
+    textInput = helperFunctions.generateElement('input',"name","text","Your Name"),
+    emailInput = helperFunctions.generateElement('input',"email","email","Your Email"),
+    messageTextarea = helperFunctions.generateElement('textarea',"message","","Your Message"),
+    submitButton = helperFunctions.generateElement('button',"","submit","Send")
+  ){
+    // contact_container = helperFunctions.nestChildren(contact_container, contact_form, contact_title_holder, h2);
+    contact_container.appendChild(contact_form);
+    contact_form = helperFunctions.appendChildren(contact_form,hiddenInput,textInput,emailInput,messageTextarea,submitButton)
+    hiddenInput.setAttribute('value',"a1b7999a-d110-4b8e-9dc4-e4c2ef7309ef");
+
+    return contact_container;
+  },
   hero: function(
     hero_tag = helperFunctions.generateElement('div',"hero"),
     figure_tag = helperFunctions.generateElement('figure'),
@@ -17,11 +35,11 @@ const pageStuff = {
     hero_tag = helperFunctions.appendChildren(hero_tag, figure_tag, banner_tag)
     return hero_tag
   },
-
   main: function(
     main_tag = helperFunctions.generateElement('main'),
-    h1_tag = helperFunctions.generateElement('h1',"","","Contact")){
-      main_tag = helperFunctions.appendChildren(main_tag, this.hero(), h1_tag, this.links());
+    h1_tag = helperFunctions.generateElement('h1',"","","Contact")
+  ){
+      main_tag = helperFunctions.appendChildren(main_tag, this.hero(), h1_tag, this.email_form(), this.links());
     return main_tag;
   },
   links: function(

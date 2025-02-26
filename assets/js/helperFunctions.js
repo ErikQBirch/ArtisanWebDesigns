@@ -72,10 +72,12 @@ export const helperFunctions = {
         }
         break;
       case 'input':
+      case 'textarea':
         element.setAttribute('type', paramClass);
         element.setAttribute('name', paramId);
+        element.setAttribute('placeholder',paramText);
         break;
-      case 'source':
+        case 'source':
         element.setAttribute('src', paramLink);
         element.setAttribute('type', paramClass);
         break;
@@ -83,6 +85,9 @@ export const helperFunctions = {
         element.id = "";
         element.setAttribute('name', paramId);
         element.setAttribute('content',paramText);
+        break;
+      case 'form':
+        element.setAttribute('action',paramLink);
         break;
       default:
         break;
