@@ -3,13 +3,13 @@ import { specialFeatures } from "./specialFeatures.js";
 
 const pageStuff = {
   questions_array: [
-    "assets/resources/imgs/previewPics/InterviewQuestions/IQ1.webp",
-    "assets/resources/imgs/previewPics/InterviewQuestions/IQ2.webp",
-    "assets/resources/imgs/previewPics/InterviewQuestions/IQ3.webp",
-    "assets/resources/imgs/previewPics/InterviewQuestions/IQ4.webp",
-    "assets/resources/imgs/previewPics/InterviewQuestions/IQ5.webp",
-    "assets/resources/imgs/previewPics/InterviewQuestions/IQ6.webp",
-    "assets/resources/imgs/previewPics/InterviewQuestions/IQ7.webp"
+    "IQ1.webp",
+    "IQ2.webp",
+    "IQ3.webp",
+    "IQ4.webp",
+    "IQ5.webp",
+    "IQ6.webp",
+    "IQ7.webp"
   ],
   constructHTML: function(
     body = document.querySelector('body'),
@@ -51,7 +51,7 @@ const pageStuff = {
   },
   side2: function(
     side2_tag = helperFunctions.generateElement('section',"side2"),
-    carousel_organism_variable = specialFeatures.carousel.carousel_organism(pageStuff.questions_array)
+    carousel_organism_variable = specialFeatures.carousel.carousel_organism("assets/resources/imgs/previewPics/InterviewQuestions/", pageStuff.questions_array)
     ){
       console.log(carousel_organism_variable)
       side2_tag = helperFunctions.appendChildren(side2_tag, carousel_organism_variable[0], carousel_organism_variable[1])
