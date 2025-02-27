@@ -21,7 +21,7 @@ const pageStuff = {
   hero: function(
     hero_tag = helperFunctions.generateElement('div',"hero"),
     figure_tag = helperFunctions.generateElement('figure'),
-    img_tag = helperFunctions.generateElement('img',"","","","../assets/resources/imgs/background.webp"),
+    img_tag = helperFunctions.generateElement('img',"","","","","../assets/resources/imgs/background.webp"),
     banner_tag = helperFunctions.generateElement('div', "banner")
   ){
     figure_tag.appendChild(img_tag);
@@ -31,8 +31,8 @@ const pageStuff = {
 
   main: function(
     main_tag = helperFunctions.generateElement('main'),
-    // figure = helperFunctions.generateElement('a',"","","","../assets/resources/ErikQ.Birch_standardResume.pdf"),
-    // resume_webp = helperFunctions.generateElement('img',"","","Resume","../assets/resources/imgs/resume.webp"),
+    // figure = helperFunctions.generateElement('a',"","","","","../assets/resources/ErikQ.Birch_standardResume.pdf"),
+    // resume_webp = helperFunctions.generateElement('img',"","","Resume","","../assets/resources/imgs/resume.webp"),
    ){
       // main_tag = helperFunctions.nestChildren(main_tag, figure, resume_webp);
       main_tag = helperFunctions.appendChildren(main_tag, this.side1(), this.side2());
@@ -40,8 +40,8 @@ const pageStuff = {
   },
   side1: function(
     side1_tag = helperFunctions.generateElement('section',"side1"),
-    figure = helperFunctions.generateElement('a',"","","","../assets/resources/ErikQ.Birch_standardResume.pdf"),
-    resume_webp = helperFunctions.generateElement('img',"","","Resume","../assets/resources/imgs/resume.webp"),
+    figure = helperFunctions.generateElement('a',"","","","","../assets/resources/ErikQ.Birch_standardResume.pdf"),
+    resume_webp = helperFunctions.generateElement('img',"","","Resume","","../assets/resources/imgs/resume.webp"),
     note = helperFunctions.generateElement('strong','','',"(NOTE: Click/Tap resume to download)")
   ){
     figure = helperFunctions.addHoverTitle(figure, "Click/Tap to download");

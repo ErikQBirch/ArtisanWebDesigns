@@ -45,8 +45,8 @@ const pageStuff = {
   hero: function(
     hero_tag = helperFunctions.generateElement('div',"hero"),
     figure_tag = helperFunctions.generateElement('figure'),
-    img_tag1 = helperFunctions.generateElement('img',"","","","assets/resources/imgs/heroPics/hero0.webp"),
-    img_tag2 = helperFunctions.generateElement('img',"","","","assets/resources/imgs/heroPics/hero1.webp"),
+    img_tag1 = helperFunctions.generateElement('img',"","","","","assets/resources/imgs/heroPics/hero0.webp"),
+    img_tag2 = helperFunctions.generateElement('img',"","","","","assets/resources/imgs/heroPics/hero1.webp"),
     banner_tag = helperFunctions.generateElement('div', "banner","","I live in a world that balances between the intracate power of science and the inspiring wonder of art!<br>I am a Web Designer!")
   ){
 
@@ -89,9 +89,9 @@ const pageStuff = {
   },
   projectArticle: function(
     projectObj,
-    a_tag = helperFunctions.generateElement("a","","","",`${projectObj.preview.previewPath}`),
+    a_tag = helperFunctions.generateElement("a","","","","",`${projectObj.preview.previewPath}`),
     figure_tag = helperFunctions.generateElement('figure'),
-    img_tag = helperFunctions.generateElement('img',"","lazyLoad",""),
+    img_tag = helperFunctions.generateElement('img',"","lazyLoad","",""),
     overlay = helperFunctions.generateElement('div',"","",projectObj.name,""),
     lazyLoad = helperFunctions.customSpecialElements(img_tag, "assets/resources/imgs/previewPics/"+projectObj.thumbnailPath,projectObj.name)
   ){
@@ -161,7 +161,7 @@ const theEvents = {
 
 
     
-      newImg = helperFunctions.generateElement('img',"","","",`assets/resources/imgs/heroPics/hero${counter}.webp`);
+      newImg = helperFunctions.generateElement('img',"","","","",`assets/resources/imgs/heroPics/hero${counter}.webp`);
 
       counter++;
 

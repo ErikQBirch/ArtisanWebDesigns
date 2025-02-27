@@ -47,7 +47,7 @@ export const specialFeatures = {
       imgPath,
       counter,
       figure = helperFunctions.generateElement('figure',`slide${counter}`, "slide"),
-      img = helperFunctions.generateElement('img',"","","carouselImg",`../${imgUplinePath}${imgPath}`)){
+      img = helperFunctions.generateElement('img',"","","carouselImg","",`../${imgUplinePath}${imgPath}`)){
         figure.appendChild(img);
         return figure;
     },
@@ -107,7 +107,7 @@ export const specialFeatures = {
         main = document.querySelector('main'),
         section = helperFunctions.generateElement('section',"preview"),
         figure = helperFunctions.generateElement('figure'),
-        img = helperFunctions.generateElement('img',"","","",imgPath),
+        img = helperFunctions.generateElement('img',"","","","",imgPath),
         note = helperFunctions.generateElement('span',"","","Click/Tap anywhere to close")
       ){
         main = helperFunctions.nestChildren(main, section,figure,img);
@@ -199,6 +199,24 @@ export const specialFeatures = {
         }
       },
     },
+  },
+  emailForm: function(
+    emailSection = helperFunctions.generateElement('section',"","emailSection"),
+    contact_form = helperFunctions.generateElement('form',"","contact-form","","POST","https://api.web3forms.com/submit"),
+    // contact_title_holder = helperFunctions.generateElement('div',"","contact-title-holder"),
+    // h2=helperFunctions.generateElement('h2',"","","Reach Out Via Email"),
+    hiddenInput = helperFunctions.generateElement('input',"access_key","hidden","","a1b7999a-d110-4b8e-9dc4-e4c2ef7309ef"), //to erikqbirch@gmail.com
+    textInput = helperFunctions.generateElement('input',"name","text","Your Name"),
+    emailInput = helperFunctions.generateElement('input',"email","email","Your Email"),
+    messageTextarea = helperFunctions.generateElement('textarea',"message","","Your Message"),
+    submitButton = helperFunctions.generateElement('button',"","submit","Send")
+  ){
+    // emailSection = helperFunctions.nestChildren(emailSection, contact_form, contact_title_holder, h2);
+    emailSection.appendChild(contact_form);
+    contact_form = helperFunctions.appendChildren(contact_form,hiddenInput,textInput,emailInput,messageTextarea,submitButton)
+    helperFunctions.requireInput(textInput,emailInput,messageTextarea);
+
+    return emailSection;
   },
   fadeAndRotateImg: function(){},
   lazyLoading: function(

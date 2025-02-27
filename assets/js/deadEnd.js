@@ -10,7 +10,7 @@ const pageStuff = {
   hero: function(
     hero_tag = helperFunctions.generateElement('div',"hero"),
     figure_tag = helperFunctions.generateElement('figure'),
-    img_tag = helperFunctions.generateElement('img',"","","","../assets/resources/imgs/background.webp"),
+    img_tag = helperFunctions.generateElement('img',"","","","","../assets/resources/imgs/background.webp"),
     banner_tag = helperFunctions.generateElement('div', "banner", "",""),
     h1 = helperFunctions.generateElement('h1',"","","This is a dead end."),
     h2 = helperFunctions.generateElement('h2',"","","Click/Tap anywhere to go back or navigate to a different part of the portfolio")

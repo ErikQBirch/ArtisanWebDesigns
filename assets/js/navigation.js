@@ -5,7 +5,7 @@ export const navigation = {
   pathAdjuster: [],
   currentPage:  "",
   extraNav_molecule: function(
-    extraNav = helperFunctions.generateElement('a',"extraNav","","Web Design | Content Creation | Social Media",`${this.pathAdjuster[1]}skills.html`)
+    extraNav = helperFunctions.generateElement('a',"extraNav","","Web Design | Content Creation | Social Media","",`${this.pathAdjuster[1]}skills.html`)
   ){
     return extraNav;
   },
@@ -34,8 +34,8 @@ export const navigation = {
   // },
   logo_molecule: function(
     div = helperFunctions.generateElement('div',"logoArea"),
-    a_tag = helperFunctions.generateElement('a',"logoLink","","",`${this.pathAdjuster[0]}`),
-    img_tag = helperFunctions.generateElement('img',"","","logo",`${this.pathAdjuster[0]}assets/resources/imgs/ArtisanWebDesigns.webp`)
+    a_tag = helperFunctions.generateElement('a',"logoLink","","","",`${this.pathAdjuster[0]}`),
+    img_tag = helperFunctions.generateElement('img',"","","logo","",`${this.pathAdjuster[0]}assets/resources/imgs/ArtisanWebDesigns.webp`)
   ){
     div = helperFunctions.appendChildren(div, a_tag, this.extraNav_molecule());
     a_tag.appendChild(img_tag);
@@ -51,13 +51,13 @@ export const navigation = {
       let a_tag;
       // console.log(this.currentPage);
       if (opt.toLocaleUpperCase() == this.currentPage.toUpperCase()){
-        a_tag = helperFunctions.generateElement('a',"","current",opt,`${this.pathAdjuster[1]}${opt.toLowerCase()}.html`);
+        a_tag = helperFunctions.generateElement('a',"","current",opt,"",`${this.pathAdjuster[1]}${opt.toLowerCase()}.html`);
       }
       else{
-        a_tag = helperFunctions.generateElement('a',"","",opt,`${this.pathAdjuster[1]}${opt.toLowerCase()}.html`);
+        a_tag = helperFunctions.generateElement('a',"","",opt,"",`${this.pathAdjuster[1]}${opt.toLowerCase()}.html`);
       }
       if (opt == "Portfolio"){
-        a_tag = helperFunctions.generateElement('a',"","",opt,`${this.pathAdjuster[0]}`);
+        a_tag = helperFunctions.generateElement('a',"","",opt,"",`${this.pathAdjuster[0]}`);
         if(this.currentPage == 'index'){
           a_tag.classList.add('current');
         } 

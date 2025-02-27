@@ -91,7 +91,7 @@ const pageStuff = {
     if (allProjects_DB[projectTitle].name == "Empty Slot"){
       newPath  = "../pages/deadEnd.html";
     } 
-    let newLink = helperFunctions.generateElement('a',"","",`${action}<br> Project`,newPath);
+    let newLink = helperFunctions.generateElement('a',"","",`${action}<br> Project`,"",newPath);
     return newLink;
   },
   main: function(
@@ -131,9 +131,9 @@ const pageStuff = {
   side2_btnHolder: function(
     prevObj,
     ID = prevObj.id,
-    socialBtn = helperFunctions.generateElement('a',"","","About Client",`${prevObj.preview.socialPath}`),
-    siteBtn = helperFunctions.generateElement('a',"","","View Site",`${prevObj.preview.sitePath}`),
-    returnBtn = helperFunctions.generateElement('a',"","","Return","../"),
+    socialBtn = helperFunctions.generateElement('a',"","","About Client","",`${prevObj.preview.socialPath}`),
+    siteBtn = helperFunctions.generateElement('a',"","","View Site","",`${prevObj.preview.sitePath}`),
+    returnBtn = helperFunctions.generateElement('a',"","","Return","","../"),
     previousProject = this.getPreviousProject(ID),
     nextProject = this.getNextProject(ID),
     btnHolder = helperFunctions.generateElement('div',"btnHolder"),

@@ -38,21 +38,22 @@ export const helperFunctions = {
     paramElement,
     paramId = '',
     paramClass = '',
-    paramText = '',
+    paramText1 = '',
+    paramText2 = '',
     paramLink = ''
   ) {
     let element = document.createElement(paramElement);
     element.id = paramId;
     element.setAttribute('class', paramClass);
 
-    if (paramText != '') {
-      element.innerHTML = paramText;
+    if (paramText1 != '' && paramElement != "textarea") {
+      element.innerHTML = paramText1;
     }
 
     switch (paramElement) {
       case 'img':
         element.setAttribute('src', paramLink);
-        element.setAttribute('alt', paramText);
+        element.setAttribute('alt', paramText1);
         element.innerHTML = '';
         break;
       case 'a':
@@ -75,7 +76,8 @@ export const helperFunctions = {
       case 'textarea':
         element.setAttribute('type', paramClass);
         element.setAttribute('name', paramId);
-        element.setAttribute('placeholder',paramText);
+        element.setAttribute('placeholder',paramText1);
+        element.setAttribute('value', paramText2);
         break;
         case 'source':
         element.setAttribute('src', paramLink);
@@ -84,10 +86,11 @@ export const helperFunctions = {
       case 'meta':
         element.id = "";
         element.setAttribute('name', paramId);
-        element.setAttribute('content',paramText);
+        element.setAttribute('content',paramText1);
         break;
       case 'form':
         element.setAttribute('action',paramLink);
+        element.setAttribute('method',paramText2);
         break;
       default:
         break;
@@ -152,4 +155,9 @@ export const helperFunctions = {
     }
     return text;
   },
+  requireInput: function(...element_s){
+    element_s.forEach(e => {
+      e.setAttribute('required',"true");
+    });
+  }
 }

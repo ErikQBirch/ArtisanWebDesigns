@@ -11,7 +11,7 @@ const pageStuff = {
   hero: function(
     hero_tag = helperFunctions.generateElement('div',"hero"),
     figure_tag = helperFunctions.generateElement('figure'),
-    img_tag = helperFunctions.generateElement('img',"","","","../assets/resources/imgs/heroPics/hero5.webp"),
+    img_tag = helperFunctions.generateElement('img',"","","","","../assets/resources/imgs/heroPics/hero5.webp"),
     banner_tag = helperFunctions.generateElement('div', "banner","","I can make you a website worthy of your content!")
   ){
     figure_tag.appendChild(img_tag);
@@ -39,7 +39,7 @@ const pageStuff = {
     h2 = helperFunctions.generateElement('h2',"","",obj.name),
     descript = helperFunctions.generateElement('p',"","",obj.descript),
     figure = helperFunctions.generateElement('figure'),
-    img = helperFunctions.generateElement('img',"","",obj.name,obj.imgPath)
+    img = helperFunctions.generateElement('img',"","",obj.name,"",obj.imgPath)
   ){
     console.log(obj.id);
     if (obj.id%2 == 0){

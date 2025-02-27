@@ -76,16 +76,42 @@
     z-index: 2;
     padding: 0 2.5rem;
   }
-  main div#contentHolder {
-    width: 50vw;
-    height: 50vw;
+  main section.emailSection form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
   }
-  main div#contentHolder a:link,
-  main div#contentHolder a:visited {
+  main section.emailSection form input, main section.emailSection form textarea, main section.emailSection form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.15rem auto;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  main section.emailSection form textarea {
+    height: 10rem;
+    line-height: 1rem;
+  }
+  main section.emailSection form button {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  main section#linkSection {
+    width: 50vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 2.5rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  main section#linkSection a:link,
+  main section#linkSection a:visited {
     color: orange;
     background-color: rgb(25, 25, 25);
     display: flex;
@@ -100,13 +126,14 @@
     font-size: 4rem;
     text-decoration: none;
     transition: color 0.25s;
+    margin: 0 1rem;
   }
-  main div#contentHolder a:link i,
-  main div#contentHolder a:visited i {
+  main section#linkSection a:link i,
+  main section#linkSection a:visited i {
     font-size: 4rem;
   }
-  main div#contentHolder a:hover,
-  main div#contentHolder a:active {
+  main section#linkSection a:hover,
+  main section#linkSection a:active {
     color: rgb(0, 75, 255);
   }
 }
@@ -122,13 +149,9 @@
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  main div#contentHolder {
-    width: 50vw;
-    height: 50vw;
-  }
-  main div#contentHolder a:link i,
-  main div#contentHolder a:visited i {
-    font-size: 7.5rem;
+  main section#linkSection a:link i,
+  main section#linkSection a:visited i {
+    font-size: 2.5rem;
   }
 }
 @media only all and (min-width: 992px) {
@@ -146,17 +169,16 @@
   main #hero {
     height: 75vh;
   }
-  main div#contentHolder {
+  main section.emailSection form {
+    width: 800px;
+  }
+  main section#linkSection {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    width: 80vw;
+    width: 60vw;
     height: -moz-fit-content;
     height: fit-content;
     margin: 1.5rem auto;
-  }
-  main div#contentHolder a:link i,
-  main div#contentHolder a:visited i {
-    font-size: 7.5rem;
   }
 }
 @media only all and (min-width: 1200px) {
