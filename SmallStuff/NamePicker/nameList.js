@@ -1,0 +1,110 @@
+export const allProjects_DB = {
+  "Period0":{
+    "courseName":"",
+    "students":[
+      {
+        "name":"",
+        "pic":"",
+        "self-proclaimed-power-level": 0
+      },
+    ],
+    "classHelpers":[],
+    "seatingChartPic":""
+  },
+  "Period1":{
+    "courseName":"",
+    "students":[
+      {
+        "name":"",
+        "pic":"",
+        "self-proclaimed-power-level": 0
+      },
+    ],
+    "classHelpers":[],
+    "seatingChartPic":""
+  },
+  "Period2":{
+    "courseName":"",
+    "students":[
+      {
+        "name":"",
+        "pic":"",
+        "self-proclaimed-power-level": 0
+      },
+    ],
+    "classHelpers":[],
+    "seatingChartPic":""
+  },
+  "Period3":{
+    "courseName":"",
+    "students":[
+      {
+        "name":"",
+        "pic":"",
+        "self-proclaimed-power-level": 0
+      },
+    ],
+    "classHelpers":[],
+    "seatingChartPic":""
+  },
+  "Period4":{
+    "courseName":"",
+    "students":[
+      {
+        "name":"",
+        "pic":"",
+        "self-proclaimed-power-level": 0
+      },
+    ],
+    "classHelpers":[],
+    "seatingChartPic":""
+  },
+  "Period5":{
+    "courseName":"",
+    "students":[
+      {
+        "name":"",
+        "pic":"",
+        "self-proclaimed-power-level": 0
+      },
+    ],
+    "classHelpers":[],
+    "seatingChartPic":""
+  },
+  "Period6":{
+    "courseName":"",
+    "students":[
+      {
+        "name":"",
+        "pic":"",
+        "self-proclaimed-power-level": 0
+      },
+    ],
+    "classHelpers":[],
+    "seatingChartPic":""
+  },
+  "Period7":{
+    "courseName":"",
+    "students":[
+      {
+        "name":"",
+        "pic":"",
+        "self-proclaimed-power-level": 0
+      },
+    ],
+    "classHelpers":[],
+    "seatingChartPic":""
+  },
+  "Period8":{
+    "courseName":"",
+    "students":[
+      {
+        "name":"",
+        "pic":"",
+        "self-proclaimed-power-level": 0
+      },
+    ],
+    "classHelpers":[],
+    "seatingChartPic":""
+  },
+}
